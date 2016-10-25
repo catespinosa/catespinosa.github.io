@@ -11,9 +11,30 @@
 
 	<div>
 		<h2>Current Weather in NYC</h2>
-		<div id="nyc-weather"></div>
+		<div id="nyc-weather">
+			<p id="temp"><strong>Temperature:</strong> <span></span></p>
+			<p id="humidity"><strong>Humidity:</strong> <span></span></p>
+			<p id="wind"><strong>Wind Speed:</strong> <span></span></p>	
+		</div>
 	</div>
 	<hr>
+	
+	<h2>Find your local weather</h2>
+	<p>Enter your city and state</p>
+
+	<form>
+		<span>City</span>
+		<input type="text" name="city" id="city">
+		<span>State</span>
+		<input type="text" name="state" id="state">
+		<button id="searchBtn">Submit</button>
+	</form>
+
+	<div id="local-weather">
+			<p id="temp-l"><strong>Temperature:</strong> <span></span></p>
+			<p id="humidity-l"><strong>Humidity:</strong> <span></span></p>
+			<p id="wind-l"><strong>Wind Speed:</strong> <span></span></p>	
+		</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="main.js" type="text/javascript" charset="utf-8" async defer></script>

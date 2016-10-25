@@ -34,7 +34,43 @@ Open Weather Map Instructions:
 
 
 $(document).ready(function () {
-  var apiKey = '19ab861f15cfd2e8216a3be1ed615598';
-  var weatherUrl = '';
-});
+ 	var apiKey = '56a9888b322a116c84e3d122fb2f8c52';
+  	var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?q=nyc&units=imperial&APPID=56a9888b322a116c84e3d122fb2f8c52';
+	// var inputCity = $('#city');
+	// var inputState = $('#state');
 
+ 	$.get(weatherUrl, function(response) { //this function should be inside this scope because i was getting an error
+      // console.log(response.main.temp); //the name of the root object is response
+		$('#temp span').text(response.main.temp); 	//text is a method in jquery
+		$('#humidity span').text(response.main.humidity); 
+		$('#wind span').text(response.wind.speed);
+
+ 	});
+	
+	$('#searchBtn').click(function(event){
+      //prevents default behavior of form
+      event.preventDefault();
+      // console.log('inputCity', inputCity.val());
+			var inputCity = $('#city');
+			var inputState = $('#state');
+			var prefix = ('http://api.openweathermap.org/data/2.5/weather?q=' + inputCity.val() + ',' + inputState.val());
+			var suffix = ('&units=imperial&APPID=56a9888b322a116c84e3d122fb2f8c52');
+			var weatherUrl = (prefix + suffix);
+		 		//console.log(weatherUrl);
+
+		 	$.get(weatherUrl, function(response) { 
+				$('#temp-l span').text(response.main.temp); 	
+				$('#humidity-l span').text(response.main.humidity); 
+				$('#wind-l span').text(response.wind.speed);
+				
+				if (response.main.temp < 60){
+					$('body').addClass('cold');
+				} else {
+					$('body').addClass('hot');
+				}
+
+
+			});
+	});
+
+});
