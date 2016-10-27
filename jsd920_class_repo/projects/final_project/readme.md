@@ -2,38 +2,22 @@
 
 ## Project Description
 
-Create a dashboard for our premium subscribers with dynamic charts and tables and analysis. The User will be able to drill down through dates, chemical, company, prices etc.  
-
-Nice to have: It should be simple for our writers to input the data for the tables i.e. excel spreadsheet or create a table in CMS.
+Search for company specific stock prices that will also give you the latest news for that company.
 
 
 ## Functional Components
 
 This is a breakdown of the top level functionality for final project
 
-User
-* Will be able to access story of interest (data article of the day)
-* Will see animated chart with data for the article of that day
-* Can sort tables
-* Can view previous articles when he clicks on data point on chart or table (chemical name, date, etc)
+* User will be able to search for a company name
+* Upon submitting the form, they'll see the company's stock price (API)
+* Company specific newsfeed with the latest 10 news stories will also appear
+* Results of the search (company name , stock price, stock change) will also be recorded on a table so the user can keep track of what they searched for in a session
 
-Sample tables:
-* http://www.chemweek.com/Assets/BusinessDaily_Monday_PriceTrends.pdf
-* http://www.chemweek.com/Assets/BusinessDaily_Wednesday_CW75.pdf
-* http://www.chemweek.com/Assets/BusinessDaily_Tuesday_M%26A.pdf
-
-Inspiration:
-* http://www.icis.com/about/dashboard/
 * http://quotes.wsj.com/index/DJIA
 
-
-Creator
-* Export data from excel file or input into table
-* Be able to select table or chart design
-* Be able to copy code snippet to add to story or be able to create it on the story itself
-
-
-
+* May use this API http://dev.markitondemand.com/MODApis/
+* https://developer.yahoo.com/finance/company.html
 
 
 ## Helper Functions
