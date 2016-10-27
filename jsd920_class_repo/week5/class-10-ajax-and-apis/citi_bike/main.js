@@ -8,32 +8,21 @@ console.log() if successful.
 */
 
 window.onload = function () {
-	document.getElementById('output').onclick = makeRequest;
+  var button = $('#getDataButton').click(function(){
+    makeRequest()
+  })
+  var url = 'https://gbfs.citibikenyc.com/gbfs/en/station_information.json';
+  function makeRequest(){
+    $.get(url)
+      .done(function(res){ console.log(res)})
+      .fail(function(xhr){ console.log("error has ocurred: ", xhr)})
+  }
 
-	function makeRequest() {
-		console.log('inside makeRequest');
-		var url = 'https://gbfs.citibikenyc.com/gbfs/en/station_information.json';
-		//create an instance of XMLHttpRequest
-		var httpRequest = new XMLHttpRequest();
-		//Set a custom function to handle the request
-		httpRequest.onreadystatechange = responseMethod;
-		//open GET request to the url
-		httpRequest.open('GET',url);
-
-		function responseMethod(){
-			//check if our state is "DONE"
-			if (httpRequest.readyState === XMLHttpRequest.DONE) {
-				if (httpRequest.status === 200) {
-					console.log(JSON.parse(httpRequest.response));
-					var data = JSON.parse(httpRequest.response);
-				}
-				else {console.log('we have a problem');}
-
-
-			}
-
-
-
-		}
-	}
+  $.ajax({
+    url:url,
+    type:'GET',
+    dataType:'PDF',
+    success: function(res) { console.log(res)},
+    error: function(xhr) { console.log(xhr)}
+  })
 };
