@@ -6,15 +6,34 @@
  $.get("https://accesscontrolalloworiginall.herokuapp.com/http://mashable.com/stories.json", function(response) {
  	var results = response.new;
  	var articles = parseResults(results);
- 	//console.log(articles);
+ 	console.log(articles);
+ 	addArticlesToPage(articles);
+ 	
+ 	// make all article title links NOT go to the source but instead open the pop up
+ 	$('section.articleContent a').on('click', function(event){
+ 		event.preventDefault();
+ 		var h3_text = $(this).children('h3')[0];
+ 		var title = 
+ 		var link = '';
+ 		var content = '';
+ 		console.log(title);
+ 		// showPopUp(title, link, content);
+ 	});
 });
+
+ function showPopUp(title, link, content) {
+ 	// make pop up div visible by removing the "loader" and "hidden" classes
+ 	// replace the html dom text in the pop up div with that of the article
+ 	// add an onclick event to be able to close the pop up
+ 	// make sure the read more from source link opens a new tab/window
+ }
 
 function parseResults(results){
 	var all_articles = []; //this is a placeholder for what we want to return
 	results.forEach(function(row){
 		var article = {
 			title : row.title,
-			image : row.image,
+			image : row.responsive_images[1].image,
 			link : row.link,
 			channel : row.channel,
 			total_shares : row.shares.total,
@@ -27,50 +46,12 @@ function parseResults(results){
 }
 
 function addArticlesToPage(articles) {
-	var single_article = [];
-	articles.forEach(function (row){
-		$('.articleContent h3').append(row.title);
-		
-
-
-		});
-		return articles(single_article);
-
-
-}
-
-function addSingleArticleToPage() {  //add the items to the dom jquery - or handlebars 
-
-	var source = $('#title-template').html();
-	var template = Handlebars.compile(source);
-
-	var articleObj = {
-			title : row.title,
-			image : row.image,
-			link : row.link,
-			channel : row.channel,
-			total_shares : row.shares.total,
-			content : row.content.plain
+	var source = $('#articles-template').html();
+	var htmlbuilder = Handlebars.compile(source);
+	var articlesDataObj = {
+		rows: articles
 	};
-	// // 3
-	var titleTemplate = template(articleObj);
+	var htmlBlock = htmlbuilder(articlesDataObj);
 
-	// // 4
-	$('#title').append(titleTemplate);
-
-
-
+	$('section#main').append(htmlBlock);
 }
-
-//do not use, just for demo!!
-
-// function Article(row){  //object constructor
-// 	this.title =  row.title;
-// 	this.image = row.image;
-// 	this.link = row.link;
-// 	this.channel = row.channel;
-// 	this.shares = row.shares.total;
-// 	this.content = row.content.plain;
-// };
-
-

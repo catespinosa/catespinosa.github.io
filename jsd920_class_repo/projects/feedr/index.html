@@ -11,6 +11,26 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+          <!-- ARTICLE HANDLEBARS TEMPLATE -->
+          <script id="articles-template" type="text/x-handlebars-template">
+            {{#each rows}}
+              <article class="article">
+                  <section class="featuredImage">
+                      <img src="{{image}}" alt="" />
+                  </section>
+                  <section class="articleContent">
+                      <a href="{{link}}">
+                          <h3>{{title}}</h3>
+                      </a>
+                      <h6>{{channel}}</h6>
+                  </section>
+                  <section class="impressions">{{total_shares}}</section>
+                  <div class="clearfix"></div>
+              </article>
+            {{/each}}
+          </script>
+
     </head>
 
     <body>
@@ -35,6 +55,7 @@
             <div class="clearfix"></div>
           </section>
         </header>
+
         <div id="popUp" class="loader hidden">
           <a href="#" class="closePopUp">X</a>
           <div class="container">
@@ -45,85 +66,8 @@
             <a href="#" class="popUpAction" target="_blank">Read more from source</a>
           </div>
         </div>
-        <section id="main" class="container">
 
-          <!-- ARTICLE HANDLEBARS TEMPLATE -->
-
-          <script id="articles-template" type="text/x-handlebars-template">
-            {{#each rows}}
-              <article class="article">
-                  <section class="featuredImage">
-                      <img src="{{image}}" alt="" />
-                  </section>
-                  <section class="articleContent">
-                      <a href="{{link}}">
-                          <h3>{{title}}</h3>
-                      </a>
-                      <h6>{{channel}}</h6>
-                  </section>
-                  <section class="impressions">{{total_shares}}</section>
-                  <div class="clearfix"></div>
-              </article>
-            {{/each}}
-          </script>
-
-          <article class="article">
-            <section class="featuredImage">
-              <img src="images/article_placeholder_1.jpg" alt="" />
-            </section>
-            <section class="articleContent">
-                <a href="#"><h3></h3></a>
-                <h6>Lifestyle</h6>
-            </section>
-            <section class="impressions">
-              <span>526</span>
-            </section>
-            <div class="clearfix"></div>
-          </article>
-
-<!--           <article class="article">
-            <section class="featuredImage">
-              <img src="images/article_placeholder_2.jpg" alt="" />
-            </section>
-            <section class="articleContent">
-                <a href="#"><h3>Test article title</h3></a>
-                <h6>Lifestyle</h6>
-            </section>
-            <section class="impressions">
-              526
-            </section>
-            <div class="clearfix"></div>
-          </article> -->
-
-<!--           <article class="article">
-            <section class="featuredImage">
-              <img src="images/article_placeholder_2.jpg" alt="" />
-            </section>
-            <section class="articleContent">
-                <a href="#"><h3>Test article title</h3></a>
-                <h6>Lifestyle</h6>
-            </section>
-            <section class="impressions">
-              526
-            </section>
-            <div class="clearfix"></div>
-          </article> -->
-
-<!--           <article class="article">
-            <section class="featuredImage">
-              <img src="images/article_placeholder_1.jpg" alt="" />
-            </section>
-            <section class="articleContent">
-                <a href="#"><h3>Test article title</h3></a>
-                <h6>Lifestyle</h6>
-            </section>
-            <section class="impressions">
-              526
-            </section>
-            <div class="clearfix"></div>
-          </article> -->
-          
-        </section>
+        <section id="main" class="container"></section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="js/handlebars.js"></script>
