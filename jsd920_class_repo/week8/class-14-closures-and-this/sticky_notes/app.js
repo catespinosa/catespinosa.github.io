@@ -33,30 +33,30 @@
 
 //- Ensure your JS runs only after document is ready (note: jQuery is included)
 $(document).ready(function() {
-
-	var count = 0;
+	var container = $('.container');
+	var count = 1;
 
 	//- Attach the proper event handler to your DOM input element(s)
 	$('#submitBtn').click(function(event){
 		event.preventDefault();
 		//1) Create a new <div> element
+		var message = $('#messageinput').val();
+		var newcolor = $('#colorinput').val();
 		var newdiv = $('<div>');
+		counter = count ++;
 		//2) Give this new <div> a class of "box"
-		newdiv.addClass('box').html(' '); 
+		newdiv.addClass('box').html(counter + ". " + message).css('background-color',newcolor).css('font-size', '14px'); 
 	    $('.container').append(newdiv);
 		//add text to this div
-		var message = $('#messageinput').val()
 		
-		count = count +1;
-		$('.box').append(count,message)
-
-		var newcolor = $('#colorinput').val()
-		$('.box').css('background-color', newcolor)
+		// $('.box').append(counter + '.' + message);
 
 		$('#messageinput').val('');
 		$('#colorinput').val('');
 		
-	})
+	});
+	container.on('click', '.box', function () {
+    $(this).remove();
+	});
 
-
-})
+});
