@@ -50,7 +50,7 @@ $(document).ready(function () {
 	    console.log(sound + 'hello my name is' + name);
 	};
 
-	//create at least 3 animals
+	//create at least 3 animals - constructors
 	function Dog(name,sound,image){
 		FarmAnimal.call(this, name,sound,image);
 	}
@@ -63,7 +63,7 @@ $(document).ready(function () {
 		FarmAnimal.call(this, name,sound,image);
 	}
 
-
+//create an instance of the animals
 	var pablo = new Dog('Skip','ruff-ruff','https://guildofshepherdsandcollies.com/wp-content/uploads/2015/11/Fotolia_76429030_Subscription_Monthly_M-1024x727.jpg');
 	var cow = new Cow('Lucy','Mooo','http://vignette4.wikia.nocookie.net/creepypasta/images/f/fc/700cow.jpg');
 

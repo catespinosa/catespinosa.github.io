@@ -13,7 +13,7 @@
  	$('section.articleContent a').on('click', function(event){
  		event.preventDefault();
  		var h3_text = $(this).children('h3')[0];
- 		var title = 
+ 		//var title = 
  		var link = '';
  		var content = '';
  		console.log(title);
