@@ -34,7 +34,14 @@ $(document).ready(function() {
        	updateMessage(id, votes++)
        });
        var downVote = $('<i class="fa fa-thumbs-down pull-right"></i>');
+       downVote.on('click', function() {
+        updateMessage(id, votes--)
+       });
        var remove = $('<i class="fa fa-trash pull-right"></i>');
+        remove.on('click', function () {
+          deleteMessage(id);
+        })
+
         //populate that li with the content
        li.html(messageText);
        li.append(upVote)
@@ -50,6 +57,13 @@ $(document).ready(function() {
  	var messagesReference = messageAppReference.ref('messages/' + id);
  	messagesReference.update({votes:votes});
  };
+ function deleteMessage (id) {
+    // find message whose objectId is equal to the id we're searching with
+    var messageReference = messageAppReference.ref('messages/' + id);
+
+    messageReference.remove();
+  }
+
  getMessages()
 });
 
