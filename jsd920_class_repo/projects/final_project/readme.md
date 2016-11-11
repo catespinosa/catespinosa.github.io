@@ -2,22 +2,21 @@
 
 ## Project Description
 
-Search for company specific stock prices that will also give you the latest news for that company.
+Create portal for cuban music dance enthusiats to hear the latest releases and get calendar updates with dance socials
 
-
-## Functional Components -
+## Functional Components 
 
 This is a breakdown of the top level functionality for final project
 
-* User will be able to search for a company name
-* Upon submitting the form, they'll see the company's stock price (API)
-* Company specific newsfeed with the latest 10 news stories will also appear
-* Results of the search (company name , stock price, stock change) will also be recorded on a table so the user can keep track of what they searched for in a session
+* Get 3 public playlists from Spotify API and display them as options on the DOM
+* User will be able to select music genre (select the playlist for the specific type of music)
+* Append playlist tracks to DOM
+* Ability to hear the songs
+* Create user inputs for adding new events
+* Store data in firebase
+* Display items as list or calendar
+* Ability to remove items
 
-* http://quotes.wsj.com/index/DJIA
-
-* May use this API http://dev.markitondemand.com/MODApis/
-* https://developer.yahoo.com/finance/company.html
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | Get my user playlists from Spotify API | :5hrs: |  :1hrs: | :---: | :---: |
@@ -28,7 +27,12 @@ This is a breakdown of the top level functionality for final project
 Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project
+ Use this section to list all supporting libraries and their role in the project
+
+* Jquery for DOM manipulation
+* Bootstrap for HTML template
+* Firebase for data storage
+
 
 ## JSON Data Keys
  Use this section to list specific JSON Data Key mappings.  
@@ -38,6 +42,9 @@ Use this section to document all helper functions. These functions should be ver
 
 ## Change Log
  Use this section to document what changes were made and when.
+
+11/11/16 - Changed project goal... no pressure :)
+
 
 ## Issues and Resolutions
  Use this section to list of all issues encountered and their resolution
