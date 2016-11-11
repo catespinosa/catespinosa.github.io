@@ -5,7 +5,7 @@
 Search for company specific stock prices that will also give you the latest news for that company.
 
 
-## Functional Components
+## Functional Components -
 
 This is a breakdown of the top level functionality for final project
 
@@ -18,6 +18,10 @@ This is a breakdown of the top level functionality for final project
 
 * May use this API http://dev.markitondemand.com/MODApis/
 * https://developer.yahoo.com/finance/company.html
+
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| Get my user playlists from Spotify API | :5hrs: |  :1hrs: | :---: | :---: |
+| Component 1 | H | 10hrs| 5hrs |  |
 
 
 ## Helper Functions
@@ -41,3 +45,9 @@ Use this section to document all helper functions. These functions should be ver
 #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
 **RESOLUTION**: Missing comma after first object in sources {} object
+
+
+
+
+
+
