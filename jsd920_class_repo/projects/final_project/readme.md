@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Portal for cuban music dance enthusiasts to hear the latest releases and get calendar updates with dance socials
+Portal for cuban music dance enthusiasts to hear the latest releases and get calendar updates with dance classes and socials
 
 ## Functional Components 
 
