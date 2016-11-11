@@ -19,7 +19,10 @@ This is a breakdown of the top level functionality for final project
 
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
+
 | Get my user playlists from Spotify API | :5hrs: |  :1hrs: | :---: | :---: |
+
+
 | Component 1 | H | 10hrs| 5hrs |  |
 
 
