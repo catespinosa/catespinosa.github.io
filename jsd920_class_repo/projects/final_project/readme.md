@@ -20,10 +20,19 @@ This is a breakdown of the top level functionality for final project
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 
-| Get my user playlists from Spotify API | :5hrs: |  :1hrs: | :---: | :---: |
+| Get my user playlists from Spotify API | H | :5hrs: |  :1hrs: | :---: | :---: |
 
+| Install and learn bootstrap | H | 8hrs| :hrs |  |
 
-| Component 1 | H | 10hrs| 5hrs |  |
+| Display playlists on the DOM | H | 3hrs| :hrs |  |
+
+| Set up firebase to store event information | H | 3hrs| :hrs |  |
+
+| Create form for user to enter event information using class 15 forum exercise as an example | H | 5hrs| :hrs |  |
+
+| Display inputs on the DOM as list | H | 5hrs| :hrs |  |
+
+| Creat add to calendar option when clicked you can add the event to your calendar | L | 5hrs| :hrs |  |
 
 
 ## Helper Functions
