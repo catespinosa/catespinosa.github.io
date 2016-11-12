@@ -41,6 +41,7 @@ Use this section to document all helper functions. These functions should be ver
 ## Additional Libraries
  Use this section to list all supporting libraries and their role in the project
 
+* A client-side JS wrapper for the Spotify Web API https://github.com/jmperez/spotify-web-api-js
 * Jquery for DOM manipulation
 * Bootstrap for HTML template
 * Firebase for data storage
