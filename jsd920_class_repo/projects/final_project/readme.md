@@ -30,17 +30,14 @@ Get my user playlists from Spotify API | H | :5hrs: |  :1hrs: | :---: | :---: |
 
 Install and learn bootstrap | H | 8hrs| 4:hrs |  |
 
+Create handlebars template to display playlist tracks
+
 Display playlists on the DOM | H | 3hrs| 5:hrs |  |
 
 Display playlist src image | H | 5 hrs | 2 days |  |
 
-Set up firebase to store event information | H | 3hrs| :hrs |  |
 
-Create form for user to enter event information using class 15 forum exercise as an example | H | 5hrs| :hrs |  |
 
-Display inputs on the DOM as list | H | 5hrs| :hrs |  |
-
-Create add to calendar option when clicked you can add the event to your calendar | L | 5hrs| :hrs |  |
 
 
 ## Helper Functions
