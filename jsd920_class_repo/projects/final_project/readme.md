@@ -2,16 +2,22 @@
 
 ## Project Description
 
-Portal for cuban music dance enthusiasts to hear the latest releases and get calendar updates with dance classes and socials
+Application for cuban dance enthusiasts to hear genre specific playlists and learn about the style of music. With time I'll incorporate dance instructional videos and add a directory with cuban dance specific schools/classes. +Calendar of events.
 
 ## Functional Components 
 
 This is a breakdown of the top level functionality for final project
 
-* Get 3 public playlists from Spotify API and display them as options on the DOM
-* User will be able to select music genre (select the playlist for the specific type of music)
-* Append playlist tracks to DOM
-* Ability to hear the songs
+* Get 3 public playlists from Spotify API
+* Display playlists on the DOM as buttons with a picture and a blurb about the style of music/dance.
+*  When the user clicks on one of the buttons, append playlist tracks to DOM
+* Give user ability to play the songs
+
+
+Nice to have (to be built after course is over)
+* Connect to the Youtube API to get dance instruction videos related to each genre
+* Create tabs for music - videos - classes - calendar
+* Append videos to videos tab
 * Create user inputs for adding new events
 * Store data in firebase
 * Display items as list or calendar
@@ -22,9 +28,11 @@ Component | Priority | Estimated Time | Time Invested | Actual Time |
 
 Get my user playlists from Spotify API | H | :5hrs: |  :1hrs: | :---: | :---: |
 
-Install and learn bootstrap | H | 8hrs| :hrs |  |
+Install and learn bootstrap | H | 8hrs| 4:hrs |  |
 
-Display playlists on the DOM | H | 3hrs| :hrs |  |
+Display playlists on the DOM | H | 3hrs| 5:hrs |  |
+
+Display playlist src image | H | 5 hrs | 2 days |  |
 
 Set up firebase to store event information | H | 3hrs| :hrs |  |
 

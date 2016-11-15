@@ -46,13 +46,27 @@ var presidentObject = {
         'Obama',
     ]
 }
+var list = $('#jquery-list')
+presidentObject.presidents.forEach(function(d){
+    var option = $("<option>").html(d)
+    list.append(option)
+})
 
-//step1: grab the handlebars html template
+var titleObj = {
+    title: "Handlebars",
+    description: "A HB Project"
+}
 
-//step2: compile the template using Handlebars.compile()
+var hbTitle = $('#title-template').html()
+var compileTitle = Handlebars.compile(hbTitle)
+var addTitleObj = compileTitle(titleObj)
+var hbTitleHtml = $('#hbtitle').append(addTitleObj)
 
-//step3: pass compile the obj
-
-//step4: append the obj(s) to the html element
-
-
+//1. grab handblebars template
+var presTemplate = $("#president-template").html()
+//2. complie template
+var compileTemp = Handlebars.compile(presTemplate)
+//3. add objs
+var addObjs = compileTemp(presidentObject)
+//4. append 
+var hbList = $('#handlebars-list').append(addObjs)
