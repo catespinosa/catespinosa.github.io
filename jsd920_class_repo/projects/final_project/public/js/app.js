@@ -60,8 +60,7 @@ genres.forEach(function(d) {
 	console.log('this is image source', d.image);
     // add image tag 
     var thumbnailsrc = $("<img>").attr('src', d.image);
-    $('.thumbnail').append.thumbnailsrc;
-
+    $('.thumbnail').append(thumbnailsrc);
     console.log('thumbnails source from object', thumbnailsrc)
     
 });
