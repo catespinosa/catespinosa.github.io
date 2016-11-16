@@ -57,16 +57,13 @@ var genres = [
 ]
 
 genres.forEach(function(d) {
-	//create a div
-	var playlists = $("<div>").html(d)
-    //add class to div
-    playlists.addClass('thumbnail');
+	console.log('this is image source', d.image);
     // add image tag 
-    var thumbnailsrc = $("<img>").attr('src', 'https://i.scdn.co/image/c7201f157a9e9c34397a59fe8e966a5bc2e37333');//was trying to use d.image
+    var thumbnailsrc = $("<img>").attr('src', d.image);
+    $('.thumbnail').append.thumbnailsrc;
+
     console.log('thumbnails source from object', thumbnailsrc)
-    // var playlistimg = $("<img>").attr('src',thumbnailsrc);
-    // $('.thumbnail').append.playlistimg;
-    // console.log('this playlist image', playlistimg)
+    
 });
 
 
