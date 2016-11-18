@@ -49,7 +49,7 @@ $(document).ready(function () {
 		thumbnail_div.css('height', div_height + 'px');
 		// console.log(oneplaylist);
 		
-		$('div.thumbnail').prepend(thumbnail_div);
+		$('div.row').append(thumbnail_div);
 		$('div.caption').prepend('<h3>'+ oneplaylist.title +'</h3>');
 	});
 
