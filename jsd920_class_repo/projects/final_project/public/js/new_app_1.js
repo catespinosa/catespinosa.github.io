@@ -1,70 +1,84 @@
 $(document).ready(function () {
-	function genres(image,title,description,button,playlistid) {
-		this.image = image;
-		this.title = title;
-		this.description = description;
-		this.button = button;
-		this.playlistid = playlistid
-	}
 
-	//create genres - constructors
-	function Salsa(image,title,description,button,playlistid){
-		genres.call(this, image,title,description,button,playlistid);
-	}
+var spotifyApi = new SpotifyWebApi();
+// spotifyApi.setAccessToken('BQD-QeP6VqzjFcPy8xpHdmiPm3Wwtrxu9UotDZt3JBsP2cL5o_2CJEvJLuxFPB2yW4vvyE0AQAqcsbC4q1RAaw');
+// spotifyApi.getUserPlaylists()  // note that we don't pass a user id
+//   .then(function(data) {
+//     console.log('User playlists', data);
+//   }, function(err) {
+//     console.error(err);
+//   });
+searchTrack('Llego la musica cubana')
 
-	function Soncubano(image,title,description,button,playlistid){
-		genres.call(this, image,title,description,button,playlistid);
-	}
+function searchTrack(queryTerm) {
+  // store the current promise in case we need to abort it
+  return spotifyApi.searchTracks(queryTerm, {limit: 5})
+    .then(function(data) {
+   console.log('data', data);
 
-	function Rumba(image,title,description,button,playlistid){
-		genres.call(this, image,title,description,button,playlistid);
-	}
 
-//create an instance of the genres
-	var timba = new Salsa('https://i.scdn.co/image/c7201f157a9e9c34397a59fe8e966a5bc2e37333','Salsa & Timba','Description', 'buttonURL','4VxLxeHYwneGkyUCZPStxo');
-	var son = new Soncubano('https://i.scdn.co/image/bfbe5d09acec6efa2a08a8820de5cbcd23d55ba2','Son cubano','Description', 'buttonURL','4VxLxeHYwneGkyUCZPStxo');
-	var guaguanco = new Rumba('https://i.scdn.co/image/3efc2bb9b97a057b57a81980ddf67df46c4918d5','Rumba','Description', 'buttonURL','4VxLxeHYwneGkyUCZPStxo');
+    }, function(err) {
+      console.error('error',err);
+    });
+}
 
-	// push all genres instances here
-	var playlists = [];
 
-	playlists.push(timba);
-	playlists.push(son);
-	playlists.push(guaguanco);
-	console.log('this is playlists',playlists)
 
-	var div_width = 300;
-	var div_height = 300;
-	// playlists.forEach(function(oneplaylist){
-	// 	console.log(oneplaylist)
-	// 	// make div
-	// 	var thumbnail_div = $('<div>');
-		
-	// 	// add class to div
-	// 	thumbnail_div.addClass('thumb-pic');
+// $.ajax({
+//    url: 'https://api.spotify.com/v1/users/126955706/playlists',
+//    headers: {
+//        'Authorization': 'Bearer ' + 'BQD-QeP6VqzjFcPy8xpHdmiPm3Wwtrxu9UotDZt3JBsP2cL5o_2CJEvJLuxFPB2yW4vvyE0AQAqcsbC4q1RAaw'
+//    },
+//    success: function(response) {
+//    	console.log('this is response', response)
+//           }
+// });
 
-	// 	// add background-img as inline css property of the div
-	// 	thumbnail_div.css('background-image', "url(" + oneplaylist.image + ")");
-	// 	thumbnail_div.css('width', div_width + 'px');
-	// 	thumbnail_div.css('height', div_height + 'px');
-	// 	// console.log(oneplaylist);
-		
-	// 	$('div.thumbnail').prepend(thumbnail_div);
-	// 	$('div.caption').prepend('<h3>'+ oneplaylist.title +'</h3>');
-	// });
 
-	function createBox (obj){
-		var parent_div = $('<div>');
-		//add class
-		parent_div.addClass('col-sm-6 col-md-4 pull-left');
-		//append to row
-		$('div.row').append(parent_div);
-		console.log('this is parent', parent_div);
-	};
-
+$('#timbaBtn').on('click', function(event) {
+  event.preventDefault(); 
+  console.log('playlist 1', event)
 
 
 });
+
+$('#sonBtn').on('click', function(event) {
+  event.preventDefault(); 
+  console.log('playlist 2', event)
+});
+
+$('#rumbaBtn').on('click', function(event) {
+  event.preventDefault(); 
+  console.log('playlist 3', event)
+});
+
+
+
+// var Spotify = require('spotify-web-api-js');
+// var s = new Spotify();
+
+
+// // https://api.spotify.com/v1/users/wizzler/playlists" -H "Authorization: Bearer {your access token}
+
+
+// // // set it in the wrapper
+// var spotifyApi = new SpotifyWebApi();
+// spotifyApi.setAccessToken('BQD-QeP6VqzjFcPy8xpHdmiPm3Wwtrxu9UotDZt3JBsP2cL5o_2CJEvJLuxFPB2yW4vvyE0AQAqcsbC4q1RAaw');
+// spotifyApi.getUserPlaylists('126955706')
+//   .then(function(data) {
+//     console.log('User playlists', data);
+//   }, function(err) {
+//     console.error(err);
+//   });
+
+// spotifyApi.getPlaylist('126955706', 'BQD-QeP6VqzjFcPy8xpHdmiPm3Wwtrxu9UotDZt3JBsP2cL5o_2CJEvJLuxFPB2yW4vvyE0AQAqcsbC4q1RAaw')
+//   .then(function(data) {
+//     console.log('User playlist', data);
+//   }, function(err) {
+//     console.error(err);
+//   });
+
+ });
 
 
 
