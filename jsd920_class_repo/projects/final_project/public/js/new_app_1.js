@@ -30,8 +30,7 @@ var salsaApi = 'https://api.spotify.com/v1/tracks/?ids=3Pacy6CMa8HPNVfeA3wkPQ,3N
 $.get(sonApi, function(response) {
   console.log('this is son', response) 
     $('.song-track span').text(response.tracks.name);
-    // $('#humidity span').text(response.main.humidity); 
-    // $('#wind span').text(response.wind.speed);
+    
     console.log('track name', name)
   });
 
