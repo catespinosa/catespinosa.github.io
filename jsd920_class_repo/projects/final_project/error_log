@@ -1,11 +1,3 @@
-jquery.js:3846 jQuery.Deferred exception: guanguanco is not defined ReferenceError: guanguanco is not defined
-    at HTMLDocument.<anonymous> (file:///Users/mzy36638/Desktop/GA_JSD/catespinosa.github.io/jsd920_class_repo/projects/final_project/public/js/new_app.js:34:17)
-    at mightThrow (file:///Users/mzy36638/Desktop/GA_JSD/catespinosa.github.io/jsd920_class_repo/projects/final_project/public/lib/jquery/dist/jquery.js:3570:29)
-    at process (file:///Users/mzy36638/Desktop/GA_JSD/catespinosa.github.io/jsd920_class_repo/projects/final_project/public/lib/jquery/dist/jquery.js:3638:12) undefinedjQuery.Deferred.exceptionHook @ jquery.js:3846process @ jquery.js:3642
-jquery.js:3855 Uncaught ReferenceError: guanguanco is not defined
-    at HTMLDocument.<anonymous> (file:///Users/mzy36638/Desktop/GA_JSD/catespinosa.github.io/jsd920_class_repo/projects/final_project/public/js/new_app.js:34:17)
-    at mightThrow (file:///Users/mzy36638/Desktop/GA_JSD/catespinosa.github.io/jsd920_class_repo/projects/final_project/public/lib/jquery/dist/jquery.js:3570:29)
-    at process (file:///Users/mzy36638/Desktop/GA_JSD/catespinosa.github.io/jsd920_class_repo/projects/final_project/public/lib/jquery/dist/jquery.js:3638:12)(anonymous function) @ new_app.js:34mightThrow @ jquery.js:3570process @ jquery.js:3638
+ERROR: 401 Unauthorized when trying to grab playlists.
 
-
-    FIXED misspelling
+WORKAROUND: Had to grap tracks instead of user's playlist because access code expires.
