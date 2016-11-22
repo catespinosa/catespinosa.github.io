@@ -26,12 +26,33 @@ var sonApi = 'https://api.spotify.com/v1/tracks/?ids=0wIEGEWdswpwOnpM3nuwkC,3b2J
 var rumbaApi = 'https://api.spotify.com/v1/tracks/?ids=4F03szV3H55QIiP94TXrsT,1KIimqBpVLFcS5Yc7DSQg9,47lSbhOlKE8fJJ2jc6HqRQ';
 var salsaApi = 'https://api.spotify.com/v1/tracks/?ids=3Pacy6CMa8HPNVfeA3wkPQ,3N3oba9mXWFD4NOnZFK46Q,0neyZWsvpfpyVutNtRjj8g,3zpPox6fuNguDVxRjSoBaJ,4rGvcJFVrCO22Rj9pCJ9EL';
 
-
+//start with the son cubano tracks
 $.get(sonApi, function(response) {
   console.log('this is son', response) 
-    $('.song-track span').text(response.tracks.name);
-    
-    console.log('track name', name)
+
+  var results = response.tracks;
+  var music = parseResults(music);
+  console.log(music);
+
+    function parseResults(results){
+    var all_tracks = []; //this is a placeholder for what we want to return
+    console.log('this are all the tracks array',all_tracks)
+    results.forEach(function(row){
+      var onetrack = {
+        title : row.name,
+        artist : row.artists.name,
+        album : row.album.name,
+        link : row.external_urls.preview_url,
+        
+      };
+      all_tracks.push(onetrack); //we want to push the object in to the all articles array
+    });
+
+    return all_tracks;
+  }
+
+
+
   });
 
 
