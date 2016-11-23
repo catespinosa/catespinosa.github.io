@@ -34,18 +34,21 @@ function parseResults(result){
   result.forEach(function(row){
     var onetrack = {
       title : row.name,
-      artist : row.artists.name,
+      artist : row.artists[0].name,
       album : row.album.name,
-      link : row.external_urls.preview_url,
+      link : row.preview_url,
+      image : row.album.images[2].url
     };
     all_tracks.push(onetrack); //we want to push the object in to the all tracks array
   });
 
   return all_tracks;
 };
+
+
 $('#timbaBtn').on('click', function(event) {
   event.preventDefault(); 
-  console.log('playlist 1', event)
+  //console.log('playlist 1', event)
   //start with the son cubano tracks
   $.get(sonApi, function(response) {
     console.log('this is son', response) 
@@ -53,7 +56,24 @@ $('#timbaBtn').on('click', function(event) {
     var results = response.tracks;
 
     var music = parseResults(results);
-    console.log(music);
+    //console.log(music);
+    addTracksToPage(music);
+
+
+    function addTracksToPage(tracks) {
+    var source = $('#tracks-template').html();
+    var htmlbuilder = Handlebars.compile(source);
+    var tracksDataObj = {
+      rows: tracks
+    };
+    var htmlBlock = htmlbuilder(tracksDataObj);
+
+    $('section#loadplaylists').append(htmlBlock);
+    }
+
+
+
+
   });
 
 });

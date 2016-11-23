@@ -26,11 +26,11 @@ Nice to have (to be built after course is over)
 
 Component | Priority | Estimated Time | Time Invested | Actual Time |
 
-Get my user playlists from Spotify API | H | :5hrs: |  :1hrs: | :---: | :---: |
+Get my user playlists from Spotify API | H | :5hrs: |  :12hrs: | :---: | :---: |
 
 Install and learn bootstrap | H | 8hrs| 4:hrs |  |
 
-Create handlebars template to display playlist tracks
+Create handlebars template to display playlist tracks 
 
 Display playlists on the DOM | H | 3hrs| 5:hrs |  |
 
@@ -67,9 +67,9 @@ Use this section to document all helper functions. These functions should be ver
 ## Issues and Resolutions
  Use this section to list of all issues encountered and their resolution
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+
+**ERROR**: [object%20Object]:1 GET file:///Users/mzy36638/Desktop/GA_JSD/catespinosa.github.io/jsd920_class_repo/projects/final_project/public/[object%20Object] net::ERR_FILE_NOT_FOUND                             
+**RESOLUTION**: Needed to target the image URL within the images {} object
 
 
 
