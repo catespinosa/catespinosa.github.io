@@ -49,6 +49,8 @@ function parseResults(result){
 $('#timbaBtn').on('click', function(event) {
   event.preventDefault(); 
   //console.log('playlist 1', event)
+
+  $("#myModal").modal('show');
   //start with the son cubano tracks
   $.get(sonApi, function(response) {
     console.log('this is son', response) 
@@ -68,7 +70,7 @@ $('#timbaBtn').on('click', function(event) {
     };
     var htmlBlock = htmlbuilder(tracksDataObj);
 
-    $('section#loadplaylists').append(htmlBlock);
+    $('table#loadplaylists').append(htmlBlock);
     }
 
 
