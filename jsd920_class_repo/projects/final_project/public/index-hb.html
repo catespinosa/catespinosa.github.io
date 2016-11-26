@@ -17,7 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body style="background-color: white;">
 
   
 
@@ -36,17 +36,28 @@
           <script id="tracks-template" type="text/x-handlebars-template">
             {{#each rows}}
               <article class="article">
+                 <iframe style="height:60px; border: 0px;background-color: #fff;" name="song" allowtransparency="true"></iframe>
+                <a target="song" href="{{link}}">
+                         <p>{{title}}</p>
+                     </a>
+               
+
                   <section class="featuredImage">
                       <img src="{{image}}" alt="" />
                   </section>
                   <section class="articleContent">
-                      <a href="{{link}}">
+                     <!--  <a href="{{link}}">
                           <h3>{{title}}</h3>
-                      </a>
+                      </a> -->
+                      
+                     
+                     
                       <h6>{{artist}}</h6>
                   </section>
                   <section class="impressions">{{album}}</section>
                   <div class="clearfix"></div>
+
+                     
               </article>
 
             {{/each}}
