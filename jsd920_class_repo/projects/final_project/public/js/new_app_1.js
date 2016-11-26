@@ -70,7 +70,7 @@ $('#timbaBtn').on('click', function(event) {
     };
     var htmlBlock = htmlbuilder(tracksDataObj);
 
-    $('table#loadplaylists').append(htmlBlock);
+    $('section#loadplaylists').append(htmlBlock);
     }
 
 
