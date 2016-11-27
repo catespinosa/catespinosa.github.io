@@ -67,6 +67,10 @@ Use this section to document all helper functions. These functions should be ver
 ## Issues and Resolutions
  Use this section to list of all issues encountered and their resolution
 
+ERROR: 401 Unauthorized when trying to grab user's playlists using access token. Did not realize access token expires.
+
+RESOLUTION: https://developer.spotify.com/web-api/get-several-tracks/ Grabbed several tracks by ID and got a response that contains an object whose key is tracks and whose value is an array of track objects in JSON format.
+
 
 **ERROR**: [object%20Object]:1 GET file:///Users/mzy36638/Desktop/GA_JSD/catespinosa.github.io/jsd920_class_repo/projects/final_project/public/[object%20Object] net::ERR_FILE_NOT_FOUND                             
 **RESOLUTION**: Needed to target the image URL within the images {} object
