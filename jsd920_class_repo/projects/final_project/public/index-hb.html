@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,7 +18,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="background-color: white;">
+  <body>
 
   
 
@@ -27,47 +28,36 @@
     <div id="myModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+               <!--  <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h4 class="modal-title"></h4>
-                </div>
+                </div> -->
                 <div class="modal-body">
-                    <!-- ARTICLE HANDLEBARS TEMPLATE -->
-          <script id="tracks-template" type="text/x-handlebars-template">
-            {{#each rows}}
-              <article class="article">
-                 <iframe style="height:60px; border: 0px;background-color: #fff;" name="song" allowtransparency="true"></iframe>
-                <a target="song" href="{{link}}">
-                         <p>{{title}}</p>
-                     </a>
-               
+                      <!-- TRACKS HANDLEBARS TEMPLATE -->
+                      <script id="tracks-template" type="text/x-handlebars-template">
+                        {{#each rows}}
+                          <section>
+                              <section class="albumcover pull-left">
+                                  <img src="{{image}}" alt="" />
+                              </section>
+                                <h5>{{title}}</h5>
+                                 <h6>{{artist}}</h6>
+                                 <!--PLAYER-->
+                                 <audio controls>
+                                   <source src="{{link}}" type="audio/mpeg" />
+                                 </audio>
+                          </section>
 
-                  <section class="featuredImage">
-                      <img src="{{image}}" alt="" />
-                  </section>
-                  <section class="articleContent">
-                     <!--  <a href="{{link}}">
-                          <h3>{{title}}</h3>
-                      </a> -->
-                      
-                     
-                     
-                      <h6>{{artist}}</h6>
-                  </section>
-                  <section class="impressions">{{album}}</section>
-                  <div class="clearfix"></div>
+                        {{/each}}
 
-                     
-              </article>
+                    </script>
 
-            {{/each}}
-        </script>
+                    <section id="loadplaylists" class="container"></section>
 
-        <section id="loadplaylists" class="container"></section>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="clearcontents">Close</button>
+                   
                 </div>
             </div>
         </div>
@@ -85,13 +75,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Mi musica cubana</a>
+          <a class="navbar-brand" href="#">Popular cuban dance music styles</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+      <!--     <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">Classes</a></li>
-            <li><a href="#contact">Submit your event</a></li>
+            <li><a href="#contact">Submit your event</a></li> -->
             <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -119,16 +109,28 @@
     <div>&nbsp;</div>
     <div>&nbsp;</div>
 
-
-    <h1>Popular Cuban Dance Styles</h1>
-
-
 <div class="row">
+
+
+<div class="col-sm-6 col-md-4 pull-left">
+    <div class="thumbnail">
+      <img src="images/son-thumb.jpg" />
+      <div class="caption">
+        <h3>Son cubano</h3>
+        <p>It's a style of music and dance that originated in Cuba and gained worldwide popularity during the 1930s. Son combines the structure and feel of the Spanish canción with Afro-Cuban traits and percussion.</p>
+        <p><a href="#" class="btn btn-primary" role="button" id="sonBtn">Show tracks</a></p>
+      </div>
+    </div>
+</div>
+
+
+
+
   <div class="col-sm-6 col-md-4 pull-left">
     <div class="thumbnail">
-      <img src="https://i.scdn.co/image/c7201f157a9e9c34397a59fe8e966a5bc2e37333" />
+      <img src="images/timba-thumb.jpg" />
       <div class="caption">
-        <h3>Salsa &amp; Timba</h3>
+        <h3>Timba</h3>
         <p>Timba is a Cuban genre of music based on popular Cuban music along with salsa, American funk/R&amp;B, and the strong influence of Afro-Cuban folkloric music.</p><br>
         <p><a href="#" class="btn btn-primary" role="button" id="timbaBtn">Show tracks</a></p>
       </div>
@@ -136,22 +138,12 @@
   </div>
 
 
-<div class="col-sm-6 col-md-4 pull-left">
-    <div class="thumbnail">
-      <img src="https://i.scdn.co/image/251dea00975a2b79b14a45befd6505f9a5f4c5e4" />
-      <div class="caption">
-        <h3>Son cubano</h3>
-        <p>It's a style of music and dance that originated in Cuba and gained worldwide popularity during the 1930s. Son combines the structure and feel of the Spanish canción with Afro-Cuban traits and percussion.</p>
-        <p><a href="#" class="btn btn-primary" role="button" id="sonBtn">Show tracks</a></p>
-      </div>
-    </div>
-  </div>
 
 
 
 <div class="col-sm-6 col-md-4 pull-left">
     <div class="thumbnail">
-     <img src="https://i.scdn.co/image/3efc2bb9b97a057b57a81980ddf67df46c4918d5" />
+     <img src="images/rumba-thumb.jpg" height="300" width="300" />
       <div class="caption">
         <h3>Rumba</h3>
         <p>Rumba is a secular genre of Cuban music involving dance, percussion, and song. It originated in the northern regions of Cuba, mainly in urban Havana and Matanzas, during the late 19th century.</p><br>
