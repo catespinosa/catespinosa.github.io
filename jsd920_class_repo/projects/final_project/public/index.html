@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,14 @@
     <title>Catherine's final project</title>
 
     <!-- Bootstrap -->
-    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<!--     <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+ -->    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,24 +30,64 @@
 
   <div class="container">
 
+   <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+               <!--  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div> -->
+                <div class="modal-body">
+                      <!-- TRACKS HANDLEBARS TEMPLATE -->
+                      <script id="tracks-template" type="text/x-handlebars-template">
+                        {{#each rows}}
+                          <section>
+                              <section class="albumcover pull-left">
+                                  <img src="{{image}}" alt="" />
+                              </section>
+                                <h5>{{title}}</h5>
+                                 <h6>{{artist}}</h6>
+                                 <!--PLAYER-->
+                                 <audio controls>
+                                   <source src="{{link}}" type="audio/mpeg" />
+                                 </audio>
+                          </section>
+
+                        {{/each}}
+
+                    </script>
+
+                    <section id="loadplaylists" class="container"></section>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="clearcontents">Close</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end Modal-->
+
 
 <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navcolor">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Mi musica cubana {{ 2 + 2 }}</a>
+          </button> -->
+          <a class="navbar-brand logocolor" href="#" style="color: white;">Popular Cuban dance styles</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+      <!--     <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">Classes</a></li>
-            <li><a href="#contact">Submit your event</a></li>
+            <li><a href="#contact">Submit your event</a></li> -->
             <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -68,16 +115,28 @@
     <div>&nbsp;</div>
     <div>&nbsp;</div>
 
-
-    <h1>Popular Cuban Dance Styles</h1>
-
-
 <div class="row">
+
+
+<div class="col-sm-6 col-md-4 pull-left">
+    <div class="thumbnail">
+      <img src="images/son-thumb.jpg" />
+      <div class="caption">
+        <h3>Son cubano</h3>
+        <p>It's a style of music and dance that originated in Cuba and gained worldwide popularity during the 1930s. Son combines the structure and feel of the Spanish canción with Afro-Cuban traits and percussion.</p>
+        <p><a href="#" class="btn btn-primary" role="button" id="sonBtn">Show tracks</a></p>
+      </div>
+    </div>
+</div>
+
+
+
+
   <div class="col-sm-6 col-md-4 pull-left">
     <div class="thumbnail">
-      <img src="https://i.scdn.co/image/c7201f157a9e9c34397a59fe8e966a5bc2e37333" />
+      <img src="images/timba-thumb.jpg" />
       <div class="caption">
-        <h3>Salsa &amp; Timba</h3>
+        <h3>Timba</h3>
         <p>Timba is a Cuban genre of music based on popular Cuban music along with salsa, American funk/R&amp;B, and the strong influence of Afro-Cuban folkloric music.</p><br>
         <p><a href="#" class="btn btn-primary" role="button" id="timbaBtn">Show tracks</a></p>
       </div>
@@ -85,22 +144,12 @@
   </div>
 
 
-<div class="col-sm-6 col-md-4 pull-left">
-    <div class="thumbnail">
-      <img src="https://i.scdn.co/image/251dea00975a2b79b14a45befd6505f9a5f4c5e4" />
-      <div class="caption">
-        <h3>Son cubano</h3>
-        <p>It's a style of music and dance that originated in Cuba and gained worldwide popularity during the 1930s. Son combines the structure and feel of the Spanish canción with Afro-Cuban traits and percussion.</p>
-        <p><a href="#" class="btn btn-primary" role="button" id="sonBtn">Show tracks</a></p>
-      </div>
-    </div>
-  </div>
 
 
 
 <div class="col-sm-6 col-md-4 pull-left">
     <div class="thumbnail">
-     <img src="https://i.scdn.co/image/3efc2bb9b97a057b57a81980ddf67df46c4918d5" />
+     <img src="images/rumba-thumb.jpg" height="300" width="300" />
       <div class="caption">
         <h3>Rumba</h3>
         <p>Rumba is a secular genre of Cuban music involving dance, percussion, and song. It originated in the northern regions of Cuba, mainly in urban Havana and Matanzas, during the late 19th century.</p><br>
@@ -113,46 +162,11 @@
 
 <div>&nbsp;</div>
 
-<!-- ARTICLE HANDLEBARS TEMPLATE -->
-          <script id="articles-template" type="text/x-handlebars-template">
-<table class="table table-hover son-table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Track name</th>
-      <th>Artist</th>
-      <th>Album</th>
-      <th>Preview URL</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td scope="row">1</td>
-      <td class="song-track">{{title}}</td>
-      <td class="song-artist">{{artist}}</td>
-      <td class="song-album">{{album}}</td>
-      <td class="song-URL">{{link}}</td>
 
-    </tr>
-   <!--  <tr>
-      <td scope="row">2</td>
-      <td class="song-track"><span></span></td>
-      <td class="song-artist"><span></span></td>
-      <td class="song-album"><span></span></td>
-      <td class="song-URL"><span></span></td>
 
-    </tr>
-    <tr>
-      <td scope="row">3</td>
-      <td class="song-track"><span></span></td>
-      <td class="song-artist"><span></span></td>
-      <td class="song-album"><span></span></td>
-      <td class="song-URL"><span></span></td>
 
-    </tr> -->
-  </tbody>
-</table>
-</script>
+
+
 
 
 </div><!--container ends-->
@@ -160,11 +174,19 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="lib/jquery/dist/jquery.js"></script>
+<!--     <script src="lib/jquery/dist/jquery.js"></script>
+ -->    
+<!-- <script src="js/keys.js"></script>
+ -->
+ <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+ -->    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="lib/spotify-web-api-js/src/spotify-web-api.js"></script>
-    <script src="lib/angular/angular.js"></script>
+    <script src="lib/handlebars/handlebars.js"></script>    
     <script src="js/new_app_1.js"></script>
   </body>
 </html>

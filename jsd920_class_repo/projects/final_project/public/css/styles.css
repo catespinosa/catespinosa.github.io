@@ -1,3 +1,19 @@
+.navcolor {
+	background-color: #233f8f;
+	border-bottom: solid 5px #fbf8dd;
+	color: white;
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
+	
+}
+.logocolor {
+	color: white;
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
+}
+
+
+
 .albumcover {
 	margin-right:10px;
 }

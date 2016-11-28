@@ -24,6 +24,12 @@ Nice to have (to be built after course is over)
 * Ability to remove items
 
 
+
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Component 1 | H | 10hrs| 5hrs |  |
+
+
 Component | Priority | Estimated Time | Time Invested | Actual Time |
 
 Get my user playlists from Spotify API | H | :5hrs: |  :12hrs: | :---: | :---: |
@@ -58,6 +64,8 @@ Use this section to document all helper functions. These functions should be ver
 ## jQuery Functional Requirements
  Use this section to list some, but not all, of the jQuery methods discovered while working on this project.
 
+ 
+
 ## Change Log
  Use this section to document what changes were made and when.
 
@@ -74,6 +82,8 @@ RESOLUTION: https://developer.spotify.com/web-api/get-several-tracks/ Grabbed se
 
 **ERROR**: [object%20Object]:1 GET file:///Users/mzy36638/Desktop/GA_JSD/catespinosa.github.io/jsd920_class_repo/projects/final_project/public/[object%20Object] net::ERR_FILE_NOT_FOUND                             
 **RESOLUTION**: Needed to target the image URL within the images {} object
+
+
 
 
 

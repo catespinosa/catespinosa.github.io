@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+  // var myFirebase = firebase.database();
+
   var sonApi = 'https://api.spotify.com/v1/tracks/?ids=3oFwFUxhOgem0hPpFsor1n,0kOy6QY60Llpp3wnaDddfB,0wIEGEWdswpwOnpM3nuwkC,3b2J8pXcrlrGMY4q7zsBtI,1XLF6Mju0XeyCL0XrM3boG';
   var rumbaApi = 'https://api.spotify.com/v1/tracks/?ids=4F03szV3H55QIiP94TXrsT,6NJZNTuXQjWiDCptV0ASze,1KIimqBpVLFcS5Yc7DSQg9,47lSbhOlKE8fJJ2jc6HqRQ';
   var salsaApi = 'https://api.spotify.com/v1/tracks/?ids=3Pacy6CMa8HPNVfeA3wkPQ,3N3oba9mXWFD4NOnZFK46Q,0neyZWsvpfpyVutNtRjj8g,3zpPox6fuNguDVxRjSoBaJ,0ndv7r0b5KlDj3ZAmzpGQZ';
