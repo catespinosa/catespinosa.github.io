@@ -34,6 +34,7 @@ Nice to have (to be built after course is over)
 | Add GET function to each of the buttons | H | 3hrs| 3hrs |  |
 | Open modal on onclick to display tracks response and reset content when closing it | H | 5hrs| 8hrs |  |
 | Use handlebars template to display tracks  | H | 8hrs| 5hrs |  |
+| Adding player to bs modal  | M | 2hrs| 4hrs |  |
 
 
 
