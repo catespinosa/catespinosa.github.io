@@ -43,6 +43,7 @@ Nice to have (to be built after course is over)
 Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
 
 Function to parse API response and push objects into array and it's called within on function.
+
 function parseResults(result){
     var all_tracks = []; //this is a placeholder for what we want to return
     //console.log('this is the tracks array',all_tracks)
@@ -83,10 +84,10 @@ function parseResults(result){
 ## Change Log
  Use this section to document what changes were made and when.
 
-11/11/16 - Changed project goal... no pressure :)
-11/19/16 - oauth access token expired so could not get user playlists, switched to get an api response with several track ids.
-11/19/16 - Added BS thumbnails in HTML and not jquery because I couldn't make it work
-11/23/16 - Changed how to display songs from BS table to BS modal
+*11/11/16 - Changed project goal... no pressure :)
+*11/19/16 - oauth access token expired so could not get user playlists, switched to get an api response with several track ids.
+*11/19/16 - Added BS thumbnails in HTML and not jquery because I couldn't make it work
+*11/23/16 - Changed how to display songs from BS table to BS modal
 
 
 ## Issues and Resolutions
