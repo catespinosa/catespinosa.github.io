@@ -42,36 +42,37 @@ Nice to have (to be built after course is over)
 ## Helper Functions
 Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
 
-Function to parse API response and push objects into array and it's called within on function.
+Function to parse API response and push objects into array and then it's called within another function.
 
-function parseResults(result){
 
-    var all_tracks = []; //this is a placeholder for what we want to return
+	function parseResults(result){
 
-    //console.log('this is the tracks array',all_tracks)
+	    var all_tracks = []; //this is a placeholder for what we want to return
 
-    result.forEach(function(row){
+	    //console.log('this is the tracks array',all_tracks)
 
-      var onetrack = {
+	    result.forEach(function(row){
 
-        title : row.name,
+	      var onetrack = {
 
-        artist : row.artists[0].name,
+	        title : row.name,
 
-        album : row.album.name,
+	        artist : row.artists[0].name,
 
-        link : row.preview_url,
+	        album : row.album.name,
 
-        image : row.album.images[2].url
+	        link : row.preview_url,
 
-      };
+	        image : row.album.images[2].url
 
-      all_tracks.push(onetrack); //we want to push the object in to the all tracks array
-      
-    });
+	      };
 
-    return all_tracks;
-  };
+	      all_tracks.push(onetrack); //we want to push the object in to the all tracks array
+
+	    });
+
+	    return all_tracks;
+	 };
 
 
 
