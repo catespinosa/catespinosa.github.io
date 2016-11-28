@@ -45,17 +45,29 @@ Use this section to document all helper functions. These functions should be ver
 Function to parse API response and push objects into array and it's called within on function.
 
 function parseResults(result){
+
     var all_tracks = []; //this is a placeholder for what we want to return
+
     //console.log('this is the tracks array',all_tracks)
+
     result.forEach(function(row){
+
       var onetrack = {
+
         title : row.name,
+
         artist : row.artists[0].name,
+
         album : row.album.name,
+
         link : row.preview_url,
+
         image : row.album.images[2].url
+
       };
+
       all_tracks.push(onetrack); //we want to push the object in to the all tracks array
+      
     });
 
     return all_tracks;
