@@ -1,3 +1,0 @@
-ERROR: 401 Unauthorized when trying to grab playlists.
-
-WORKAROUND: Had to grap tracks instead of user's playlist because access code expires.
