@@ -1,9 +1,10 @@
 .navcolor {
 	background-color: #233f8f;
-	border-bottom: solid 5px #fbf8dd;
 	color: white;
 	font-family: 'Lobster', cursive;
 	font-size: 30px;
+	padding-top:10px;
+	padding-bottom:10px;
 	
 }
 .logocolor {
@@ -17,7 +18,10 @@
 	font-size:21px;
 }
 
-
+.mybtn {
+	background-color:#e03d4e;
+	border-color:#e03d4e;
+}
 
 .albumcover {
 	margin-right:10px;

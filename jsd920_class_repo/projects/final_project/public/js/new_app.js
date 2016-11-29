@@ -33,25 +33,35 @@ $(document).ready(function () {
 	playlists.push(guaguanco);
 	console.log('this is playlists',playlists)
 
-	var div_width = 300;
-	var div_height = 300;
-	playlists.forEach(function(oneplaylist){
-		console.log(oneplaylist)
-		// make div
-		var thumbnail_div = $('<div>');
-		
-		// add class to div
-		thumbnail_div.addClass('thumb-pic');
+	// var div_width = 300;
+	// var div_height = 300;
 
-		// add background-img as inline css property of the div
-		thumbnail_div.css('background-image', "url(" + oneplaylist.image + ")");
-		thumbnail_div.css('width', div_width + 'px');
-		thumbnail_div.css('height', div_height + 'px');
-		// console.log(oneplaylist);
+
+	// playlists.forEach(function(oneplaylist){
+	// 	console.log(oneplaylist)
+	// 	// make div
+	// 	var thumbnail_div = $('<div>');
 		
-		$('div.thumbnail').prepend(thumbnail_div);
-		$('div.caption').prepend('<h3>'+ oneplaylist.title +'</h3>');
-	});
+	// 	// add class to div
+	// 	thumbnail_div.addClass('thumb-pic');
+
+	// 	// add background-img as inline css property of the div
+	// 	thumbnail_div.css('background-image', "url(" + oneplaylist.image + ")");
+	// 	thumbnail_div.css('width', div_width + 'px');
+	// 	thumbnail_div.css('height', div_height + 'px');
+	// 	// console.log(oneplaylist);
+		
+	// 	$('div.thumbnail').prepend(thumbnail_div);
+	// 	$('div.caption').prepend('<h3>'+ oneplaylist.title +'</h3>');
+	// });
+
+
+
+	function createBox (obj){
+		$('<img>').attr(src,obj.image);
+		console.log('this is obj', obj);
+
+	};
 
 
 });

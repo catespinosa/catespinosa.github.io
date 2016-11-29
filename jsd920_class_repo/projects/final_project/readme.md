@@ -2,7 +2,9 @@
 
 ## Project Description
 
-Web application for cuban dance enthusiasts to hear genre specific playlists and learn about the style of music. With time I'll incorporate dance instructional videos and add a directory with cuban dance specific schools/classes. +Calendar of events.
+Web application for cuban dance enthusiasts to hear genre specific playlists and learn about the style of music and dance. With time I'll incorporate dance instructional videos and add a directory with cuban dance specific schools/classes. +Calendar of events.
+
+http://catherineespinosa.surge.sh/
 
 ## Functional Components 
 
@@ -80,11 +82,10 @@ Function to parse API response and push objects into array and then it's called 
 ## Additional Libraries
  Use this section to list all supporting libraries and their role in the project
 
-* SPOTIFY web API https://developer.spotify.com/web-api/get-several-tracks/
+* SPOTIFY web API endpoint https://developer.spotify.com/web-api/get-several-tracks/
 * Jquery for DOM manipulation
 * Bootstrap for HTML template
-* Firebase for data storage
-
+* Handlebars template to display tracks
 
 ## JSON Data Keys
  Use this section to list specific JSON Data Key mappings. 
