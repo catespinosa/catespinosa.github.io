@@ -9,7 +9,7 @@
 		// var letter = "";
 
 		//Helper Function to append a random index from an array.
-		function randomLetter(array) {
+		function randomRueda(array) {
 			
 			console.log(array[Math.floor(Math.random() * array.length)]);
 
@@ -27,7 +27,7 @@
 
 		// }
 
-		randomLetter(l);
+		randomRueda(l);
 		// randomLetter(u);
 		// twoRandomLetters(f);
 		// randomLetter(y);
