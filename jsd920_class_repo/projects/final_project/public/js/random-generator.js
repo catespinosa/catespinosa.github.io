@@ -2,7 +2,17 @@
 	$("#jumble").click(function(){
 		console.log("Clicked");
 		$("#Name").text('');
-		var l = ["Dile que no", "Arriba", "Abajo","Dame", "Enchufa", "Enchufa Doble", "Guapea", "Pelota", "Sombrero"];
+		var l = [{
+			move:"Dile que no",
+			description:"xyz"},
+			{move:"Arriba",
+			description:"sldfsdfsdf"},
+			{move:"Abajo",
+			description:"asdfsdfsdfsd"}
+		];
+		console.log ("list of objects", l)	
+
+		// , "Arriba", "Abajo","Dame", "Enchufa", "Enchufa Doble", "Guapea", "Pelota", "Sombrero"];
 		// var u = ["a", "e", "i", "o", "u"];
 		// var f = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "w", "x", "v", "z"];
 		// var y = ["y", "ie", "i",];

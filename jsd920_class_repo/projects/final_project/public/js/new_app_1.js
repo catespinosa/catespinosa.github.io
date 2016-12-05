@@ -8,7 +8,7 @@ $(document).ready(function () {
 
   function parseResults(result){
     var all_tracks = []; //this is a placeholder for what we want to return
-    //console.log('this is the tracks array',all_tracks)
+    console.log('this is the tracks array',all_tracks)
     result.forEach(function(row){
       var onetrack = {
         title : row.name,
@@ -54,7 +54,7 @@ $(document).ready(function () {
       var results = response.tracks;
 
       var music = parseResults(results);
-      //console.log(music);
+      console.log(music);
       addTracksToPage(music);    
 
     });
