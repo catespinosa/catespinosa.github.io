@@ -8,6 +8,10 @@
 			{move:"Arriba",
 			description:"sldfsdfsdf"},
 			{move:"Abajo",
+			description:"asdfsdfsdfsd"},
+			{move:"Enchufa",
+			description:"asdfsdfsdfsd"},
+			{move:"Enchufa doble",
 			description:"asdfsdfsdfsd"}
 		];
 		console.log ("list of objects", l)	
