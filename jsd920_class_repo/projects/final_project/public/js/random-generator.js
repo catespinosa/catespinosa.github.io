@@ -2,7 +2,18 @@
 	$("#jumble").click(function(){
 		console.log("Clicked");
 		$("#Name").text('');
-		var l = [{
+
+		// , "Arriba", "Abajo","Dame", "Enchufa", "Enchufa Doble", "Guapea", "Pelota", "Sombrero"];
+		// var u = ["a", "e", "i", "o", "u"];
+		// var f = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "w", "x", "v", "z"];
+		// var y = ["y", "ie", "i",];
+		// var letter = "";
+
+		//Helper Function to append a random index from an array.
+
+
+		function randomRueda(array) {
+			var l = [{
 			move:"Dile que no",
 			description:"xyz"},
 			{move:"Arriba",
@@ -15,19 +26,10 @@
 			description:"asdfsdfsdfsd"}
 		];
 		console.log ("list of objects", l)	
+			//console.log(array[Math.floor(Math.random() * array.length)]);
 
-		// , "Arriba", "Abajo","Dame", "Enchufa", "Enchufa Doble", "Guapea", "Pelota", "Sombrero"];
-		// var u = ["a", "e", "i", "o", "u"];
-		// var f = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "w", "x", "v", "z"];
-		// var y = ["y", "ie", "i",];
-		// var letter = "";
-
-		//Helper Function to append a random index from an array.
-		function randomRueda(array) {
-			
-			console.log(array[Math.floor(Math.random() * array.length)]);
-
-			$("#Name").append(array[Math.floor(Math.random() * array.length)]);
+			$("#Name").append(array.move[Math.floor(Math.random() * array.length)]);
+			$("#description").append(array.description[Math.floor(Math.random() * array.length)]);
 
 		}
 
@@ -41,7 +43,7 @@
 
 		// }
 
-		randomRueda(l);
+		randomRueda();
 		// randomLetter(u);
 		// twoRandomLetters(f);
 		// randomLetter(y);
