@@ -1,7 +1,7 @@
 # Catherine Espinosa's javascript development course repo.
 
-Contains class projects.
+## Class projects
 
-http://catespinosa.github.io/index.html
+*Final project http://catherineespinosa.surge.sh
 
-Final project is hosted at http://catherineespinosa.surge.sh
+*Portfolio: http://catespinosa.github.io/index.html
