@@ -26,3 +26,13 @@
 .albumcover {
 	margin-right:10px;
 }
+.ruedagen-img {
+	margin-right:10px;
+}
+.centered {
+	text-align: center;
+}
+#video {
+	width: 560px;
+	height: 315px;
+}

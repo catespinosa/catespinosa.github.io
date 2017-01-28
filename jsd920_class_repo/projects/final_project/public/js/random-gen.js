@@ -1,25 +1,37 @@
+$(document).ready(function(){
+    $("#video").hide();
+    $(".jumbotron").hide();
+});
+
+
 var movesArray = [
     {
     move:"Dile que no",
       description:"Cross body step",
-      videosource:"https://www.youtube.com/embed/JswM_OUf2zA"
+      videosource:"https://www.youtube.com/embed/fa4EHHHFcsQ"
+
+    },
+    {
+    move:"Dame",
+      description:"CMove on to the next follower",
+      videosource:"https://www.youtube.com/embed/czwBiVX_8qM"
 
     },
     {
       move:"Arriba",
       description:"Walk forwards",
-      videosource:"https://www.youtube.com/embed/JswM_OUf2zA"
+      videosource:""
     },
     {
       move:"Abajo",
       description:"Walk backwards",
-      videosource:"https://www.youtube.com/embed/JswM_OUf2zA"
+      videosource:""
 
     },
     {
       move:"Enchufa",
       description:"Follower's left turn and leaders move to the next follower",
-      videosource:"https://www.youtube.com/embed/JswM_OUf2zA"
+      videosource:"https://www.youtube.com/embed/qIdSys1iE5c"
     },
     {
       move:"Enchufa doble",
@@ -29,28 +41,45 @@ var movesArray = [
     {
       move:"Guapea",
       description:"Basic step",
-      videosource:"https://www.youtube.com/embed/JswM_OUf2zA"
+      videosource:"https://www.youtube.com/embed/l5ElboSxHqc"
     },
     {
       move:"Pelota",
       description:"Stamp twice then clap twice",
-      videosource:"https://www.youtube.com/embed/JswM_OUf2zA"
+      videosource:"https://www.youtube.com/embed/7MFz-fyMhPs"
     },
     {
       move:"Pelota loca",
       description:"Enchufa then stamp, clap, stamp, clap, stamp, clap, clap clap",
-      videosource:"https://www.youtube.com/embed/JswM_OUf2zA"
+      videosource:"https://www.youtube.com/embed/aNuHV16UZbo"
     },
     {
       move:"Sombrero",
       description:"Hold both hands, right over left, and turn her to her left, then move your left arm over your head, and your right over hers",
-      videosource:"https://www.youtube.com/embed/JswM_OUf2zA"
+      videosource:"https://www.youtube.com/embed/Y0U309VrG2w"
     }
 ];
 
 $('#randomize').click(function() {
   var randomCall = movesArray[Math.floor(Math.random() * movesArray.length)];
+  $('.jumbotron').show();
   $('#Name').text(randomCall.move);
   $('#description').text(randomCall.description);
-  $('#video').attr('src',randomCall.videosource)
+  if (randomCall.videosource == "") {
+    $('#video').hide();
+  }
+  else {
+    $('#video').show();
+    $('#video').attr('src',randomCall.videosource);
+  }
+  //this only works if the videosource doens't exist
+  // if (randomCall.hasOwnProperty("videosource")) {
+  //   $('#video').show();
+  //   $('#video').attr('src',randomCall.videosource);
+  // }
+  // else {
+  //   $('#video').hide();
+  // }
+  console.log(randomCall.videosource)
+  
 });

@@ -25,149 +25,85 @@
   </head>
   <body>
 
-  
+      <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navcolor">
+          <div class="container">
+            <div class="navbar-header">
+              <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button> -->
+              <a class="navbar-brand logocolor" href="#" style="color: white;">Dance Cuban Style</a>
+            </div>
+           
+        </nav>
 
-  <div class="container">
+      <div class="container">
 
-   <!-- Modal HTML -->
-    <div id="myModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-               <!--  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div> -->
-                <div class="modal-body">
-                      <!-- TRACKS HANDLEBARS TEMPLATE -->
-                      <script id="tracks-template" type="text/x-handlebars-template">
-                        {{#each rows}}
-                          <section>
-                              <section class="albumcover pull-left">
-                                  <img src="{{image}}" alt="" />
-                              </section>
-                                <h5>{{title}}</h5>
-                                 <h6>{{artist}}</h6>
-                                 <!--PLAYER-->
-                                 <audio controls>
-                                   <source src="{{link}}" type="audio/mpeg" />
-                                 </audio>
-                          </section>
 
-                        {{/each}}
 
-                    </script>
 
-                    <section id="loadplaylists" class="container"></section>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" id="clearcontents">Close</button>
-                   
-                </div>
+        <div class="row">
+        <div class="centered">
+        <h1>Rueda de Casino - Random Call Generator</h1>
+        <p class="lead">This random rueda call generator will help you become familiar with the basic calls.<br />
+         Click on the button to generate your next rueda move!</p>
+
+<!--           <img class="ruedagen-img" src="images/timba-rueda1.jpg" />
+ -->              
+              <p><a href="#" class="btn btn-primary mybtn" role="button" id="randomize">Rueda Call Generator</a></p>
+
+              <div class="jumbotron">
+
+              <h3 id="Name"></h3>
+              <p id="description"></p>
+              <iframe id="video"></iframe>
+              </div>
+
+              <p>Rueda de Casino is a circle or wheel (rueda) of partners dancing in unison in response to the calls of the leader in the group.  "Calls" in a Rueda include turns patterns, footwork sequences, and various games.  Many of the calls for Rueda in Cuba speak to pop-culture themes and expressions, a repertoire that can expand and adapt to the many local cultures it encounters as it spreads throughout the globe.</p>
+
+              <p>Many students new to dance, or new to this form, find Cuban Salsa to be a joyful and social opportunity to re-discover a more easeful, natural way of being in their bodies.  Cuban Salsa does not prescribe “style,” but allows for discovery of the beauty and sensuality of each individual body in motion.</p> 
+
+
+
+        </div>
+        
+              </div>
             </div>
         </div>
-    </div>
-    <!--end Modal-->
 
 
-<!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navcolor">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button> -->
-          <a class="navbar-brand logocolor" href="#" style="color: white;">Dance Cuban Style</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-      <!--     <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">Classes</a></li>
-            <li><a href="#contact">Submit your event</a></li> -->
-            <!-- <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li> -->
-          </ul>
-         <!--  <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
-          </ul> -->
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+
+
+
+
+
+
 
     <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-
-<div class="row">
 
 
 
-<div class="col-sm-6 col-md-4 pull-left">
-    <div class="thumbnail">
-      <img src="images/timba-thumb.jpg" />
-      <div class="caption">
-      <p>Click on the button to generate your next rueda move!</p>
-        <p><a href="#" class="btn btn-primary mybtn" role="button" id="randomize">Rueda Call Generator</a></p>
-        <h3 id="Name"></h3>
-        <p id="description"></p>
-        <iframe id="video"></iframe>
+
+
+
+
+
+    </div><!--container ends-->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         
-      </div>
-    </div>
-</div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
 
-
-
-
-
-
-
-
-
-<div>&nbsp;</div>
-
-
-
-
-
-
-
-
-</div><!--container ends-->
-
- <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
- -->    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-   <!--  <script src="lib/spotify-web-api-js/src/spotify-web-api.js"></script> -->
-    <!-- <script src="lib/handlebars/handlebars.js"></script> -->    
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!-- <script src="lib/jquery/dist/jquery.js"></script> -->
-    
-<script type="text/javascript" src="js/random-gen.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-<!-- <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
- -->  
+    <script type="text/javascript" src="js/random-gen.js"></script>
+ 
   </body>
 </html>
