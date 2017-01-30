@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#video").hide();
+    $(".video").hide();
     $(".jumbotron").hide();
 });
 
@@ -66,20 +66,23 @@ $('#randomize').click(function() {
   $('#Name').text(randomCall.move);
   $('#description').text(randomCall.description);
   if (randomCall.videosource == "") {
-    $('#video').hide();
+    $('.video').hide();
+    $('#vid-container').removeClass('embed-responsive embed-responsive-16by9');
   }
   else {
-    $('#video').show();
-    $('#video').attr('src',randomCall.videosource);
+    $('.video').show();
+    $('.video').attr('src',randomCall.videosource);
+    $('#vid-container').addClass('embed-responsive embed-responsive-16by9');
   }
+  // console.log(randomCall.videosource)
+
   //this only works if the videosource doens't exist
   // if (randomCall.hasOwnProperty("videosource")) {
-  //   $('#video').show();
-  //   $('#video').attr('src',randomCall.videosource);
+  //   $('.video').show();
+  //   $('.video').attr('src',randomCall.videosource);
   // }
   // else {
-  //   $('#video').hide();
+  //   $('.video').hide();
   // }
-  console.log(randomCall.videosource)
   
 });
