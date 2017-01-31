@@ -26,8 +26,7 @@ Use this section to document all helper functions. These functions should be ver
 This section will contain a list of all issues encountered and their resolution
 
 #### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
-
+**ERROR**: Uncaught TypeError: Cannot read property 'plain' of undefined                             
+**RESOLUTION**: 
 
 

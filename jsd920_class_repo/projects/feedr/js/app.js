@@ -13,11 +13,13 @@
  	$('section.articleContent a').on('click', function(event){
  		event.preventDefault();
  		var h3_text = $(this).children('h3')[0];
- 		//var title = 
- 		var link = '';
- 		var content = '';
- 		console.log(title);
- 		// showPopUp(title, link, content);
+ 		var title = response.new.title;
+ 		var link = response.new.link;
+ 		// var content = response.new.content.plain;
+ 		//showPopUp(title, link, content);
+ 		//remove hidden class from pop up
+ 		$('#popUp').removeClass('.loader hidden');
+ 		$('.loader .container').removeAttr('display');
  	});
 });
 
