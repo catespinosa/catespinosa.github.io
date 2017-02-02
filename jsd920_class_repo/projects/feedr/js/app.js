@@ -47,7 +47,6 @@ function parseResults(results){
  		var link = response.new.link;
  		var description = response.new.content;
  		showPopUp(title, link, description);
- 		//remove hidden class from pop up
  	});
 });
 
@@ -64,7 +63,7 @@ function parseResults(results){
  	// add an onclick event to be able to close the pop up
  	$('.closePopUp a').on('click', function (event) {
  		event.preventDefault();
- 		$('#popUp').hide();
+ 		$('#popUp').dialog('close');
  	});
  	// make sure the read more from source link opens a new tab/window
  };
