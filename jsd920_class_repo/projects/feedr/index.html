@@ -12,7 +12,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-         
 
     </head>
 
@@ -43,8 +42,7 @@
           </section>
         </header>
 
-
-        <!-- ARTICLE HANDLEBARS TEMPLATE -->
+<!-- ARTICLE HANDLEBARS TEMPLATE -->
       <script id="articles-template" type="text/x-handlebars-template">
             {{#each rows}}
               <article class="article">
@@ -60,6 +58,9 @@
                   <section class="impressions">{{total_shares}}</section>
                   <div class="clearfix"></div>
               </article>
+
+         
+        
            
 
         <div id="popUp" class="loader hidden">
@@ -67,9 +68,9 @@
           <div class="container">
             <h1>{{title}}</h1>
             <p>
-              {{content}}
+              {{description}}
             </p>
-            <a href="{{link}}" class="popUpAction" target="_blank">Read more from source</a>
+            <a href="{{readmore}}" class="popUpAction" target="_blank">Read more from source</a>
           </div>
         </div>
 

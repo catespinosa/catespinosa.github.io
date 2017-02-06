@@ -19,7 +19,8 @@ function parseResults(results){
 			link : row.link,
 			channel : row.channel,
 			total_shares : row.shares.total,
-			content : row.content.plain
+			content : row.content.plain,
+			description : row.content.plain
 		};
 		all_articles.push(article); //we want to push the object in to the all articles array
 	});
@@ -46,25 +47,21 @@ function parseResults(results){
  		var title = response.new.title;
  		var link = response.new.link;
  		var description = response.new.content;
- 		showPopUp(title, link, description);
+ 		showPopUp(h3_text, link, description);
  	});
 });
 
  function showPopUp(title, link, description) {
  	// make pop up div visible by removing the "loader" and "hidden" classes
  		$('#popUp').removeClass('loader hidden');
- 		$('#popUp.loader .container').css('display','');
  	// replace the html dom text in the pop up div with that of the article
- 		function addtexttopopup (response) {
- 			var popUptext = response.articles;
- 			var popup = parseResults(popUptext);
- 			addArticlesToPage(popup);
- 		};
+ 		$('#popUp h1').html(title);
+ 		$('#popUp p').html(description);
+ 		$('#popUp a').attr('link');
+
  	// add an onclick event to be able to close the pop up
- 	$('.closePopUp a').on('click', function (event) {
- 		event.preventDefault();
- 		$('#popUp').dialog('close');
- 	});
+ 
+ 
  	// make sure the read more from source link opens a new tab/window
  };
 
