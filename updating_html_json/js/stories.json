@@ -1,0 +1,23 @@
+[
+ {
+   "headline": "Article 1",
+   "date":"February 10, 2017",
+   "author":"Natasha",
+   "blurb": "(1) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum gravida, interdum risus nec, cursus urna. Integer at nibh non tortor bibendum molestie vitae eget velit...",
+   "link": "file1.html"
+   },
+ {
+   "headline": "Agrium earnings plummet on lower fertilizer prices",
+   "date":"February 10, 2017",
+   "author":"Vincent",
+   "blurb": "(2) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum gravida, interdum risus nec, cursus urna. Integer at nibh non tortor bibendum molestie vitae eget velit. ...",
+   "link": "file2.html"
+  },
+ {
+   "headline": "Oxy's Ingleside cracker expected to start up in the first quarter of 2017",
+   "date":"February 10, 2017",
+   "author":"Jing",
+   "blurb": "(3)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum gravida, interdum risus nec, cursus urna. Integer at nibh non tortor bibendum molestie vitae eget velit. ...",
+   "link": "file3.html"
+ }
+]
