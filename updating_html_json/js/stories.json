@@ -1,4 +1,4 @@
-[
+{ "myObj":[
  {
    "headline": "Article 1",
    "date":"February 10, 2017",
@@ -21,3 +21,4 @@
    "link": "file3.html"
  }
 ]
+}

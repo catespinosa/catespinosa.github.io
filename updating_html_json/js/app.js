@@ -15,13 +15,16 @@ $(document).ready(function () {
 //2. Parse JSON
 
 	$.getJSON('https://dl.dropboxusercontent.com/s/kmqf99al4l7ntie/stories.json?dl=0', function(response) {
-		addArticlesToPage(response);
-		console.log(response);
-//3. Iterate through objects and push into array
-		response.forEach(function(row){
-				var all_articles = [];
-				console.log("this is the array", all_articles)
-				var article = {
+ 	var results = response.myObj;
+ 	var articles = parseResults(results);
+ 	console.log(articles);
+ 	addArticlesToPage(articles);
+ 	//3. Iterate through objects and push into array
+		function parseResults (results) {
+			var all_articles = [];
+			console.log(all_articles)
+			results.forEach(function(row){
+					var article = {
 					headline : row.headline,
 					date : row.date,
 					author : row.author,
@@ -31,9 +34,9 @@ $(document).ready(function () {
 				all_articles.push(article);
 
 		});
+			return all_articles;
 
-
-	});
+	};
 
 //4. Add articles to index.html - create template?
 	
@@ -45,13 +48,15 @@ $(document).ready(function () {
 	};
 	var htmlBlock = htmlbuilder(articlesDataObj);
 
-	$('article').append(htmlBlock);
+	$('article#myList').append(htmlBlock);
+
 	
 	};//addArticlesToPage		
 
 
 
 //5. Click event on headline that takes you to the story's html file.
+	});
 
 
 });
