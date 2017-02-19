@@ -1,5 +1,5 @@
 .navcolor {
-	background-color: #233f8f;
+	
 	color: white;
 	font-family: 'Lobster', cursive;
 	font-size: 30px;
@@ -10,7 +10,7 @@
 .logocolor {
 	color: white;
 	font-family: 'Lobster', cursive;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 /*.myheaders {
@@ -18,6 +18,21 @@
 	font-size:21px;
 	color: white;
 }*/
+
+.navbar-inverse .navbar-nav > li > a {  /*need to find out if this is good practice*/
+  color: white;
+}
+
+.mynav a {
+	font-size:19px;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: lighter;
+	color:white;
+}
+
+.myactive {
+	background-color: #23718f;
+}
 
 .mybtn {
 	background-color: transparent;

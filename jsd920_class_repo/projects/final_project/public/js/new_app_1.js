@@ -23,6 +23,18 @@ $(document).ready(function () {
     return all_tracks;
   };
 
+
+
+//loading dynamic content with jquery
+function dynamicContent(){
+  $('nav.li > a').click(function(e){
+  e.preventDefault();
+  $("#dynamic").load($(this).attr('href'));
+  });
+};
+
+
+
   //template for displaying tracks in modal
   function addTracksToPage(tracks) {
       var source = $('#tracks-template').html();
