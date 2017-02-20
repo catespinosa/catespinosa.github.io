@@ -1,6 +1,14 @@
 $(document).ready(function () {
 
-  // var myFirebase = firebase.database();
+//loading dynamic content with jquery
+  $('#myClick a').on('click', function(event) {
+  event.preventDefault();
+  console.log("click",event)
+  $('#dynamic').html("");
+  $("#dynamic").load($(this).attr('href'));
+  });
+
+
 
   var sonApi = 'https://api.spotify.com/v1/tracks/?ids=5YNG7h28lGXNzdx7L9zrUP,3oFwFUxhOgem0hPpFsor1n,0wIEGEWdswpwOnpM3nuwkC,3b2J8pXcrlrGMY4q7zsBtI';
   var rumbaApi = 'https://api.spotify.com/v1/tracks/?ids=4F03szV3H55QIiP94TXrsT,6NJZNTuXQjWiDCptV0ASze,1KIimqBpVLFcS5Yc7DSQg9,47lSbhOlKE8fJJ2jc6HqRQ';
@@ -22,16 +30,6 @@ $(document).ready(function () {
 
     return all_tracks;
   };
-
-
-
-//loading dynamic content with jquery
-function dynamicContent(){
-  $('nav.li > a').click(function(e){
-  e.preventDefault();
-  $("#dynamic").load($(this).attr('href'));
-  });
-};
 
 
 

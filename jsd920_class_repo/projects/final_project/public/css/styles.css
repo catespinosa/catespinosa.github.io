@@ -23,7 +23,7 @@
   color: white;
 }
 
-.mynav a {
+#mynav a {
 	font-size:19px;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: lighter;
