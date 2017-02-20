@@ -4,8 +4,7 @@ $(document).ready(function () {
   $('#myClick a').on('click', function(event) {
   event.preventDefault();
   console.log("click",event)
-  $('#dynamic').html("");
-  $("#dynamic").load($(this).attr('href'));
+  
   });
 
 

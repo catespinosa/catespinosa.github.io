@@ -5,6 +5,7 @@
 	font-size: 30px;
 	padding-top:10px;
 	padding-bottom:10px;
+	background: #13467f;
 
 }
 .logocolor {
@@ -23,7 +24,7 @@
   color: white;
 }
 
-#mynav a {
+.mynav a {
 	font-size:19px;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: lighter;
@@ -33,6 +34,40 @@
 .myactive {
 	background-color: #23718f;
 }
+/*header styles*/
+
+header {
+    min-height: 650px;
+    text-align: center;
+    color: #fff;
+    background: #13467f;
+}
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header img {
+    width: 35%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header .intro-text .hello {
+    margin-bottom: 20px;
+    display: block;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    
+}
+
+header .intro-text .greeting {
+    font-size: 1.25em;
+    
+}
+/*end header styles*/
+
 
 .mybtn {
 	background-color: transparent;
@@ -168,4 +203,20 @@
 body {
 background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
  background-blend-mode: multiply;
+ color:white;
 }
+
+/*creating classes for hiding/showing content*/
+.hide {
+	display:none;
+}
+/*Styles for the different sections*/
+#playLists {
+	padding: 75px 0px 75px 0px;
+}
+#randomGen {
+	padding: 75px 0px 75px 0px;
+}
+
+
+

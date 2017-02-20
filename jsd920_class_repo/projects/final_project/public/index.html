@@ -25,9 +25,7 @@
     <![endif]-->
   </head>
   <body>
-
   
-
   <div class="container">
 
    <!-- Modal HTML -->
@@ -101,73 +99,137 @@
       </div>
     </nav>
 
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
 
-<div class="row">
+<!-- header -->
+  <header>
 
-
-<section id="dynamic">
-
-<div class="col-sm-6 col-md-4 pull-left">
-    <div class="hovereffect">
-      <img src="images/timba-thumb.jpg" class="img-responsive" />
-      
-      <div class="overlay"> 
-        <h2>Rueda de casino</h2>
-        <p><a href="#" class="btn btn-primary mybtn" role="button" id="timbaBtn">Play tracks</a></p>
-      </div>
-
-<!--     <h3 class="myheaders">Cuban Salsa and Rueda de Casino</h3>
- -->        <h4 class="blurb">Pairs of dancers form a circle, with dance moves called out by one person, a caller.  “Calls” in a Rueda include turns patterns, footwork sequences, and various games.</h4>
-
-    </div>
-</div>
-
-
-
-<div class="col-sm-6 col-md-4 pull-left">
-    <div class="hovereffect">
-      <img src="images/son-thumb.jpg" class="img-responsive" />
-      <div class="overlay"> 
-        <h2>Son cubano</h2>
-        <p><a href="#" class="btn btn-primary mybtn" role="button" id="sonBtn">Play tracks</a></p>
-      </div>
-        <h4 class="blurb">Son is danced on the two count (contratiempo). It combines the structure and feel of the Spanish canción with Afro-Cuban traits and percussion.</h4>
-        <br />
-        
-      </div>
-    </div>
-
-<div class="col-sm-6 col-md-4 pull-left">
-    <div class="hovereffect">
-      <img src="images/rumba-thumb.jpg" class="img-responsive" />
-      <div class="overlay"> 
-        <h2>Rumba</h2>
-         <p><a href="#" class="btn btn-primary mybtn" role="button" id="rumbaBtn">Play tracks</a></p>
-      </div>
-        <h4 class="blurb">Vocal improvisation, elaborate dancing and polyrhythmic drumming are the key components of all rumba styles (yambú, guaguancó and columbia). Cajones (wooden boxes) were used as drums until the early 20th century, when they were replaced by tumbadoras (conga drums).</h4>
-       
-        
-      </div>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="hello">How to dance like a cuban</span>
+                    </div>    
+                    <div class="intro-text">
+                        <span class="greeting">So you want to learn how to dance cuban style</span>
+                    </div>
+                    <div id="dancebtn" class="page-scroll">
+                        <a href="#playLists" class="btn btn-lg btn-outline">
+                            <i></i>Start here
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
 
-
-</section><!--dynamic id-->
-
-</div><!--row-->
+  </header>
 
 
-</div>
+<div id="dynamic"> <!-- not sure i need this anymore. i'm loading all the items on page load -->
 
 
+        <section id="playLists">
+
+          <div class="container">
+
+            <div class="row">
+
+            <h1>Popular Cuban dance styles</h1>
+
+
+            <div class="col-sm-6 col-md-4 pull-left">
+                <div class="hovereffect">
+                  <img src="images/timba-thumb.jpg" class="img-responsive" />
+                  
+                  <div class="overlay"> 
+                    <h2>Rueda de casino</h2>
+                    <p><a href="#" class="btn btn-primary mybtn" role="button" id="timbaBtn">Play tracks</a></p>
+                  </div>
+
+                   <h4 class="blurb">Pairs of dancers form a circle, with dance moves called out by one person, a caller.  “Calls” in a Rueda include turns patterns, footwork sequences, and various games.</h4>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-6 col-md-4 pull-left">
+                <div class="hovereffect">
+                  <img src="images/son-thumb.jpg" class="img-responsive" />
+                  <div class="overlay"> 
+                    <h2>Son cubano</h2>
+                    <p><a href="#" class="btn btn-primary mybtn" role="button" id="sonBtn">Play tracks</a></p>
+                  </div>
+                    <h4 class="blurb">Son is danced on the two count (contratiempo). It combines the structure and feel of the Spanish canción with Afro-Cuban traits and percussion.</h4>
+                    <br />
+                    
+                  </div>
+                </div>
+
+            <div class="col-sm-6 col-md-4 pull-left">
+                <div class="hovereffect">
+                  <img src="images/rumba-thumb.jpg" class="img-responsive" />
+                  <div class="overlay"> 
+                    <h2>Rumba</h2>
+                     <p><a href="#" class="btn btn-primary mybtn" role="button" id="rumbaBtn">Play tracks</a></p>
+                  </div>
+                    <h4 class="blurb">Vocal improvisation, elaborate dancing and polyrhythmic drumming are the key components of all rumba styles (yambú, guaguancó and columbia). Cajones (wooden boxes) were used as drums until the early 20th century, when they were replaced by tumbadoras (conga drums).</h4>
+                   
+                    
+                  </div>
+                </div>
+
+
+
+
+
+            </div><!--row-->
+
+          </div><!--container-->  
+
+        </section>
+
+
+        <section id="randomGen">
+
+            <div class="row">
+                    <div class="centered">
+                    <h1>Rueda de Casino Call Generator</h1>
+                    <p class="lead">Become familiar with the basic rueda calls.<br />
+                     Click on the button to generate your next rueda move!</p>
+
+            <!--           <img class="ruedagen-img" src="images/timba-rueda1.jpg" />
+             -->              
+                          <p><a href="#" class="btn btn-primary mybtn" role="button" id="randomize">Rueda Call Generator</a></p>
+
+                          <div class="jumbotron">
+
+                          <h3 id="Name"></h3>
+                          <p id="description"></p>
+                          <div id="vid-container">
+                            <iframe class="embed-responsive-item video"></iframe>
+                          </div>
+
+                          </div>
+
+                          <p class="rueda-text">Rueda de Casino is a circle or wheel (rueda) of partners dancing in unison in response to the calls of the leader in the group.  "Calls" in a Rueda include turns patterns, footwork sequences, and various games.</p>
+
+
+
+                    </div>
+                    
+                          </div>
+                        </div>
+                    </div>
+
+
+            </div>
+
+        </section>
+
+</div><!--dynamic id-->
 
 
 
@@ -203,5 +265,7 @@
    <!--  <script src="lib/spotify-web-api-js/src/spotify-web-api.js"></script> -->
     <!-- <script src="lib/handlebars/handlebars.js"></script> -->    
     <script src="js/new_app_1.js"></script>
+    <script type="text/javascript" src="js/random-gen.js"></script>
+
   </body>
 </html>
