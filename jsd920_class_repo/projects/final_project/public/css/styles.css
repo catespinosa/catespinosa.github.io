@@ -11,7 +11,7 @@
 .logocolor {
 	color: white;
 	font-family: 'Lobster', cursive;
-	font-size: 40px;
+	font-size: 20px;
 }
 
 /*.myheaders {
@@ -26,9 +26,8 @@
 
 .mynav a {
 	font-size:19px;
-	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-weight: lighter;
 	color:white;
+	font-family: 'Arimo',sans-serif;
 }
 
 .myactive {
@@ -44,7 +43,7 @@ header {
 }
 
 header .container {
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 50px;
 }
 
@@ -55,10 +54,10 @@ header img {
 }
 
 header .intro-text .hello {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: block;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
     
 }
 
@@ -74,6 +73,17 @@ header .intro-text .greeting {
 	border: solid 1px white;
 }
 
+#dancebtn {
+	background-color: transparent;
+	border: solid 1px white;
+	width: 200px;
+	border-radius: 5px;
+	color:white;
+	margin:0px auto;
+}
+#dancebtn a {
+	color:white;
+}
 
 .blurb {
 	color:white;
@@ -201,9 +211,11 @@ header .intro-text .greeting {
 
 /*background gradient*/
 body {
-background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
- background-blend-mode: multiply;
- color:white;
+/*background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;*/
+color:rgba(0,0,0,.8);
+font-family: Arimo, sans-serif;
+ 
 }
 
 /*creating classes for hiding/showing content*/
@@ -211,12 +223,22 @@ background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), l
 	display:none;
 }
 /*Styles for the different sections*/
-#playLists {
+#danceStyles {
 	padding: 75px 0px 75px 0px;
+	min-height: 650px;
 }
-#randomGen {
-	padding: 75px 0px 75px 0px;
+#danceStyles h1 {
+	padding:40px 0px 60px 0px;
+
 }
 
+#randomGen {
+	padding: 85px 0px 75px 0px;
+ 	min-height: 650px;
+}
+#randomize {
+	border: solid 1px #13467f;
+	color:#13467f;
+}
 
 

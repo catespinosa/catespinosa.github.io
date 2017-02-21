@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+
 
     <link href="css/styles.css" rel="stylesheet">
 
@@ -26,7 +28,7 @@
   </head>
   <body>
   
-  <div class="container">
+
 
    <!-- Modal HTML -->
     <div id="myModal" class="modal fade">
@@ -73,12 +75,7 @@
     <nav class="main navbar-default navbar-fixed-top navbar-inverse navcolor">
       <div class="container">
         <div class="navbar-header">
-          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button> -->
+           
           <a class="navbar-brand logocolor" href="#" style="color: white;">Dance Cuban Style</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -89,8 +86,8 @@
            
           </ul> -->
          <ul class="nav navbar-nav navbar-right mynav" id="myClick">
-            <li><a href="#">Dance styles</a></li>
-            <li><a href="rueda-random-gen.html">Rueda call generator</a></li>
+            <li><a href="#danceStyles">Dance styles</a></li>
+            <li><a href="#randomGen">Rueda call generator</a></li>
             <li><a href="#">Classes</a></li>
             <li><a href="#">About</a></li>
 <!--             <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
@@ -107,14 +104,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text">
-                        <span class="hello">How to dance like a cuban</span>
+                        <span class="hello">Learn to dance like the cubans</span>
                     </div>    
                     <div class="intro-text">
-                        <span class="greeting">So you want to learn how to dance cuban style</span>
+                        <span class="greeting"></span>
                     </div>
                     <div id="dancebtn" class="page-scroll">
-                        <a href="#playLists" class="btn btn-lg btn-outline">
-                            <i></i>Start here
+                        <a href="#danceStyles" class="btn btn-lg btn-outline">Start here
                         </a>
                     </div>
                 </div>
@@ -130,13 +126,13 @@
 <div id="dynamic"> <!-- not sure i need this anymore. i'm loading all the items on page load -->
 
 
-        <section id="playLists">
+        <section id="danceStyles">
 
           <div class="container">
 
             <div class="row">
 
-            <h1>Popular Cuban dance styles</h1>
+            <h1 class="centered"><strong>Popular Cuban dance styles</strong></h1>
 
 
             <div class="col-sm-6 col-md-4 pull-left">
@@ -144,11 +140,10 @@
                   <img src="images/timba-thumb.jpg" class="img-responsive" />
                   
                   <div class="overlay"> 
-                    <h2>Rueda de casino</h2>
+                    <h2>Salsa and rueda de casino</h2>
+                    <p class="blurb">Pairs of dancers form a circle, with dance moves called out by one person, a caller.  “Calls” in a Rueda include turns patterns, footwork sequences, and various games.</p>
                     <p><a href="#" class="btn btn-primary mybtn" role="button" id="timbaBtn">Play tracks</a></p>
                   </div>
-
-                   <h4 class="blurb">Pairs of dancers form a circle, with dance moves called out by one person, a caller.  “Calls” in a Rueda include turns patterns, footwork sequences, and various games.</h4>
 
                 </div>
             </div>
@@ -160,10 +155,10 @@
                   <img src="images/son-thumb.jpg" class="img-responsive" />
                   <div class="overlay"> 
                     <h2>Son cubano</h2>
+                    <p class="blurb">Son is danced on the two count (contratiempo). It combines the structure and feel of the Spanish canción with Afro-Cuban traits and percussion.</p>
                     <p><a href="#" class="btn btn-primary mybtn" role="button" id="sonBtn">Play tracks</a></p>
+                    
                   </div>
-                    <h4 class="blurb">Son is danced on the two count (contratiempo). It combines the structure and feel of the Spanish canción with Afro-Cuban traits and percussion.</h4>
-                    <br />
                     
                   </div>
                 </div>
@@ -173,10 +168,10 @@
                   <img src="images/rumba-thumb.jpg" class="img-responsive" />
                   <div class="overlay"> 
                     <h2>Rumba</h2>
+                    <p class="blurb">Vocal improvisation, elaborate dancing and polyrhythmic drumming are the key components of all rumba styles (yambú, guaguancó and columbia).</p>
+                   
                      <p><a href="#" class="btn btn-primary mybtn" role="button" id="rumbaBtn">Play tracks</a></p>
                   </div>
-                    <h4 class="blurb">Vocal improvisation, elaborate dancing and polyrhythmic drumming are the key components of all rumba styles (yambú, guaguancó and columbia). Cajones (wooden boxes) were used as drums until the early 20th century, when they were replaced by tumbadoras (conga drums).</h4>
-                   
                     
                   </div>
                 </div>
@@ -196,7 +191,7 @@
 
             <div class="row">
                     <div class="centered">
-                    <h1>Rueda de Casino Call Generator</h1>
+                    <h1><strong>Rueda de Casino Call Generator</strong></h1>
                     <p class="lead">Become familiar with the basic rueda calls.<br />
                      Click on the button to generate your next rueda move!</p>
 
@@ -213,17 +208,10 @@
                           </div>
 
                           </div>
-
-                          <p class="rueda-text">Rueda de Casino is a circle or wheel (rueda) of partners dancing in unison in response to the calls of the leader in the group.  "Calls" in a Rueda include turns patterns, footwork sequences, and various games.</p>
-
-
-
                     </div>
                     
-                          </div>
-                        </div>
-                    </div>
-
+            </div>
+                      
 
             </div>
 
@@ -244,7 +232,7 @@
 
 
 
-</div><!--container ends-->
+
 
 
 

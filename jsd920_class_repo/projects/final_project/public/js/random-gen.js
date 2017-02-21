@@ -60,7 +60,8 @@ var movesArray = [
     }
 ];
 
-$('#randomize').click(function() {
+$('#randomize').click(function(e) {
+  e.preventDefault();
   var randomCall = movesArray[Math.floor(Math.random() * movesArray.length)];
   $('.jumbotron').show();
   $('#Name').text(randomCall.move);

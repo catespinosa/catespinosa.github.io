@@ -1,11 +1,12 @@
 $(document).ready(function () {
 
-//loading dynamic content with jquery
-  $('#myClick a').on('click', function(event) {
-  event.preventDefault();
-  console.log("click",event)
+// //loading dynamic content with jquery
+//   $('#myClick a').on('click', function(event) {
+//   event.preventDefault();
+//   console.log("click",event)
+//   $('#playLists').hide();
   
-  });
+//   });
 
 
 
