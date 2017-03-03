@@ -240,5 +240,13 @@ font-family: Arimo, sans-serif;
 	border: solid 1px #13467f;
 	color:#13467f;
 }
+#meetUps {
+  padding: 85px 0px 75px 0px;
+  min-height: 650px;
+}
+#meetBtn {
+  border: solid 1px #13467f;
+  color:#13467f;
+}
 
 
