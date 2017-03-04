@@ -235,18 +235,31 @@ font-family: Raleway, sans-serif;
 #randomGen {
 	padding: 85px 0px 75px 0px;
  	min-height: 650px;
+  background: #efefef;
 }
 #randomize {
 	border: solid 1px #13467f;
 	color:#13467f;
+
 }
 #meetUps {
   padding: 85px 0px 75px 0px;
   min-height: 650px;
+
 }
+
 #meetBtn {
   border: solid 1px #13467f;
   color:#13467f;
+}
+#results {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#results img {
+  float: left;
 }
 
 
