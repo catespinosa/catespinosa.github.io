@@ -70,6 +70,32 @@
     </div>
     <!--end Modal-->
 
+    <!-- Modal fullscreen -->
+    <div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">About this page</h4>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Hola! My name is Catherine. I am a Cuban music fan and coding newbie.</p>
+            <p class="lead">This web application was created for the Cuban dance enthusiasts and newbies to explore the dance styles and become familar with the types of music.</p>
+             <p class="lead">Technologies used:</p>
+             <ul class="lead">
+              <li><strong>Spotify Web API</strong> - Tracks for the different dance styles</li>
+              <li><strong>Meetup API</strong> - Showing cuban dance meetups (currently only showing for the NY area)</li>
+              <li><strong>jQuery</strong></li>
+              <li><strong>Bootstrap 3.0</strong></li>
+             </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 <!-- Fixed navbar -->
     <nav class="main navbar-default navbar-fixed-top navbar-inverse navcolor">
@@ -84,9 +110,9 @@
             <li><a href="#danceStyles">Dance styles</a></li>
             <li><a href="#randomGen">Rueda call generator</a></li>
             <li><a href="#meetUps">Meetups</a></li>
-            <li><a href="#">About</a></li>
-<!--             <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
- -->     </ul>
+            <li><a data-toggle="modal" data-target="#modal-fullscreen">About</a></li>
+
+         </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
@@ -127,13 +153,13 @@
 
             <div class="row centered">
 
-            <h1><strong>Popular Cuban dance styles</strong></h1>
-            <p class="lead">Learn about the most popular Cuban dance styles and click to listen songs that are sure to get you dancing</p>
+            <h1><strong>Popular Cuban social dance styles</strong></h1>
+            <p class="lead">Casino (Cuban style salsa), Son and Rumba are the most popular social dance styles. Dancers usually combine moves from Rumba and Son into their salsa routines.</p>
 
 
 
             <div class="col-sm-6 col-md-4 pull-left">
-                <div class="hovereffect">
+                <div class="thumbnail hovereffect">
                   <img src="images/timba-thumb.jpg" class="img-responsive" />
                   
                   <div class="overlay"> 
@@ -148,7 +174,7 @@
 
 
             <div class="col-sm-6 col-md-4 pull-left">
-                <div class="hovereffect">
+                <div class="thumbnail hovereffect">
                   <img src="images/son-thumb.jpg" class="img-responsive" />
                   <div class="overlay"> 
                     <h2>Son cubano</h2>
@@ -161,7 +187,7 @@
                 </div>
 
             <div class="col-sm-6 col-md-4 pull-left">
-                <div class="hovereffect">
+                <div class="thumbnail hovereffect">
                   <img src="images/rumba-thumb.jpg" class="img-responsive" />
                   <div class="overlay"> 
                     <h2>Rumba</h2>
@@ -192,12 +218,12 @@
 
                     <div class="centered">
                     <h1><strong>Rueda de Casino Call Generator</strong></h1>
-                    <p class="lead">Click on the button to generate your next rueda move<br />
-                     </p>
+                    <p><a href="#" class="btn btn-primary mybtn" role="button" id="randomize"><strong>NEXT RUEDA MOVE</strong></a></p>
+                    
 
             <!--           <img class="ruedagen-img" src="images/timba-rueda1.jpg" />
              -->              
-                          <p><a href="#" class="btn btn-primary mybtn" role="button" id="randomize">Rueda Call Generator</a></p>
+                          
 
                           <div class="jumbotron">
 

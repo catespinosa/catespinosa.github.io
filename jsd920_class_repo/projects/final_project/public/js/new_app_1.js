@@ -1,12 +1,18 @@
 $(document).ready(function () {
 
-// //loading dynamic content with jquery
-//   $('#myClick a').on('click', function(event) {
-//   event.preventDefault();
-//   console.log("click",event)
-//   $('#playLists').hide();
-  
-//   });
+
+
+// .modal-backdrop classes
+
+$(".modal-fullscreen").on('show.bs.modal', function () {
+  setTimeout( function() {
+    $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+  }, 0);
+});
+$(".modal-fullscreen").on('hidden.bs.modal', function () {
+  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+});
+
 
 
 

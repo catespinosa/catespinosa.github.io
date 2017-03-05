@@ -228,7 +228,7 @@ font-family: Raleway, sans-serif;
 	min-height: 650px;
 }
 #danceStyles h1 {
-	padding:40px 0px 60px 0px;
+	padding:40px 0px 20px 0px;
 
 }
 
@@ -236,10 +236,14 @@ font-family: Raleway, sans-serif;
 	padding: 85px 0px 75px 0px;
  	min-height: 650px;
   background: #efefef;
+  background-image: url('../images/CCM/Cuban_dancing_bg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 #randomize {
-	border: solid 1px #13467f;
-	color:#13467f;
+	border: solid 1px #ed8623;
+	color:#fff;
+  background: #ed8623;
 
 }
 #meetUps {
@@ -261,5 +265,55 @@ font-family: Raleway, sans-serif;
 #results img {
   float: left;
 }
+
+/* .modal-fullscreen */
+
+.modal-fullscreen {
+  background: transparent;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
+}
+hr {
+    width: 80px;
+    height: 12px;
+    display: block;
+    background: #ed8623;
+    border: 0;
+    margin: 0 auto 60px auto;
 
 
