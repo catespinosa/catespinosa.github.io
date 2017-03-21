@@ -1,37 +1,38 @@
 .navcolor {
-	
-	color: white;
-	font-family: 'Lobster', cursive;
-	font-size: 30px;
-	padding-top:10px;
-	padding-bottom:10px;
-	background: #13467f;
-
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  background: #996699;
 }
 .logocolor {
-	color: white;
-	font-family: 'Lobster', cursive;
-	font-size: 20px;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
 }
 
 /*.myheaders {
-	font-family: 'Lobster', cursive;
-	font-size:21px;
-	color: white;
+  font-family: 'Lobster', cursive;
+  font-size:21px;
+  color: white;
 }*/
 
 .navbar-inverse .navbar-nav > li > a {  /*need to find out if this is good practice*/
-  color: white;
+  color: lightgoldenrodyellow;
+}
+.navbar-inverse .navbar-nav:hover > li > a {  /*need to find out if this is good practice*/
+  color: lightgoldenrodyellow;
 }
 
 .mynav a {
-	font-size:19px;
-	color:white;
-	font-family: 'Raleway',sans-serif;
+  font-size:19px;
+  color:white;
+  font-family: 'Raleway',sans-serif;
 }
 
 .myactive {
-	background-color: #23718f;
+  background-color: #23718f;
 }
 /*header styles*/
 
@@ -39,7 +40,11 @@ header {
     min-height: 650px;
     text-align: center;
     color: #fff;
-    background: #13467f;
+    background: #339999;
+    background-image: url('../images/new/images/Cuban_dancing_female.png'), url('../images/new/images/Cuban_dancing_male.png'); 
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: left, right;
+    background-position-y: top, top;
 }
 
 header .container {
@@ -58,7 +63,7 @@ header .intro-text .hello {
     display: block;
     font-family: 'Lobster', cursive;
     font-size: 4em;
-    
+    color: lightgoldenrodyellow;
 }
 
 header .intro-text .greeting {
@@ -69,42 +74,48 @@ header .intro-text .greeting {
 
 
 .mybtn {
-	background-color: transparent;
-	border: solid 1px white;
+  background-color: transparent;
+  border: solid 1px lightgoldenrodyellow;
+  color:lightgoldenrodyellow;
+}
+
+.mybtn:hover {
+  background-color: transparent;
+  border: solid 1px lightgoldenrodyellow;
+  color:lightgoldenrodyellow;
 }
 
 #dancebtn {
-	background-color: transparent;
-	border: solid 1px white;
-	width: 200px;
-	border-radius: 5px;
-	color:white;
-	margin:0px auto;
+  background-color: transparent;
+  border: solid 1px lightgoldenrodyellow;
+  width: 200px;
+  border-radius: 5px;
+  color:white;
+  margin:0px auto;
 }
 #dancebtn a {
-	color:white;
+  color:lightgoldenrodyellow;
 }
 
 .blurb {
-	color:white;
-	font-size: 14px;
-	font-weight: lighter;
-	padding:10px;
+  color:lightgoldenrodyellow;
+  font-size: 14px;
+  padding:10px;
 }
 
 .albumcover {
-	margin-right:10px;
+  margin-right:10px;
 }
 .ruedagen-img {
-	margin-right:10px;
+  margin-right:10px;
 }
 .centered {
-	text-align: center;
+  text-align: center;
 }
 .rueda-text {
-	text-align: justify;
-	padding-right:50px;
-	padding-left:50px;
+  text-align: justify;
+  padding-right:50px;
+  padding-left:50px;
 }
 /*sticky footer*/
 .footer {
@@ -126,7 +137,7 @@ header .intro-text .greeting {
   position: relative;
   text-align: center;
   cursor: default;
-  background: #333;
+  background: #996699;
 }
 
 .hovereffect .overlay {
@@ -141,7 +152,7 @@ header .intro-text .greeting {
 
 .hovereffect img {
   opacity: 0.5;
-  filter: alpha(opacity=40);	
+  filter: alpha(opacity=40);  
   display: block;
   position: relative;
   max-width: none;
@@ -156,30 +167,31 @@ header .intro-text .greeting {
 
 .hovereffect:hover img {
   opacity: 0.2;
-  filter: alpha(opacity=40);
+  filter: alpha(opacity=10);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
 
 .hovereffect h2 {
   text-transform: uppercase;
-  color: white;
+  color: lightgoldenrodyellow;
   text-align: center;
   position: relative;
   font-size: 17px;
   overflow: hidden;
   padding: 0.5em 0;
   background-color: transparent;
+  font-weight: bold;
 }
 
 .hovereffect h2:after {
   position: absolute;
-  color: white;
+  color: lightgoldenrodyellow;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: lightgoldenrodyellow;
   content: '';
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -192,8 +204,8 @@ header .intro-text .greeting {
   transform: translate3d(0,0,0);
 }
 
-.hovereffect a, .hovereffect p {
-  color: #FFF;
+.hovereffect a, {
+  color: lightgoldenrodyellow;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -220,42 +232,62 @@ font-family: Raleway, sans-serif;
 
 /*creating classes for hiding/showing content*/
 .hide {
-	display:none;
+  display:none;
 }
 /*Styles for the different sections*/
 #danceStyles {
-	padding: 75px 0px 75px 0px;
-	min-height: 650px;
+  padding: 55px 0px 75px 0px;
+  min-height: 650px;
+  background:rgba(255, 253, 229, 0.59);
 }
 #danceStyles h1 {
-	padding:40px 0px 20px 0px;
+  padding:30px 0px 20px 0px;
+  color:#996699;
 
 }
 
 #randomGen {
-	padding: 85px 0px 75px 0px;
- 	min-height: 650px;
-  background: #efefef;
+  padding: 65px 0px 75px 0px;
+  min-height: 550px;
+  background: #dedede;
   background-image: url('../images/CCM/Cuban_dancing_bg.png');
   background-repeat: no-repeat;
   background-position: center top;
 }
+#randomGen h1 {
+  color:#339999;
+}
 #randomize {
-	border: solid 1px #ed8623;
-	color:#fff;
-  background: #ed8623;
+  background-color: transparent;
+  border: solid 1px #339999;
+  color:#339999;
 
 }
 #meetUps {
   padding: 85px 0px 75px 0px;
   min-height: 650px;
+  background:rgba(255, 253, 229, 0.59);
 
+}
+#meetUps h1 {
+  padding:30px 0px 20px 0px;
+  color:#996699;
 }
 
 #meetBtn {
-  border: solid 1px #13467f;
-  color:#13467f;
+  border: solid 1px #996699;
+  color:#996699;
 }
+#meetBtn:visited a {
+  border: solid 1px #996699;
+  color:#996699;
+}
+
+#meetBtn:active a {
+  border: solid 1px #996699;
+  color:#996699;
+}
+
 #results {
   width: 50%;
   margin-left: auto;
@@ -264,6 +296,9 @@ font-family: Raleway, sans-serif;
 
 #results img {
   float: left;
+}
+#results a {
+  color:#996699;
 }
 
 /* .modal-fullscreen */

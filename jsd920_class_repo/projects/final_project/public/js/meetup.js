@@ -1,15 +1,15 @@
-  $('#meetBtn').on('click', function (event) {
-    event.preventDefault();
+$('#meetBtn').on('click', function (event) {
+ event.preventDefault();
     console.log('button', event);
-    // // check if navigator geolocation is available from the browser
-    //     if (navigator.geolocation) {
-          // if it is use the getCurrentPosition method to retrieve the Window's location
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var lat = position.coords.latitude;
-            var long = position.coords.longitude;
+  //   // // check if navigator geolocation is available from the browser
+  //   //     if (navigator.geolocation) {
+  //         // if it is use the getCurrentPosition method to retrieve the Window's location
+  //         navigator.geolocation.getCurrentPosition(function(position) {
+  //           var lat = position.coords.latitude;
+  //           var long = position.coords.longitude;
 
-            console.log('lat: ', lat);
-            console.log('long: ', long);
+  //           console.log('lat: ', lat);
+  //           console.log('long: ', long);
 
            
 
@@ -75,12 +75,12 @@
              
               
 
-            });//navigation
+            // });//navigation
 
               
 
 
-  });//onclick
+ });//onclick
 
 
 

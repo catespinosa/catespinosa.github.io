@@ -79,14 +79,14 @@
             <h4 class="modal-title" id="myModalLabel">About this page</h4>
           </div>
           <div class="modal-body">
-            <p class="lead">Hola! My name is Catherine. I am a Cuban music fan and coding newbie.</p>
+            <p class="lead">Hola! My name is Catherine. I am a Cuban music fan and JavaScript coding newbie.</p>
             <p class="lead">This web application was created for the Cuban dance enthusiasts and newbies to explore the dance styles and become familar with the types of music.</p>
              <p class="lead">Technologies used:</p>
              <ul class="lead">
               <li><strong>Spotify Web API</strong> - Tracks for the different dance styles</li>
               <li><strong>Meetup API</strong> - Showing cuban dance meetups (currently only showing for the NY area)</li>
               <li><strong>jQuery</strong></li>
-              <li><strong>Bootstrap 3.0</strong></li>
+              <li><strong>Bootstrap</strong></li>
              </ul>
           </div>
           <div class="modal-footer">
@@ -98,12 +98,12 @@
 
 
 <!-- Fixed navbar -->
-    <nav class="main navbar-default navbar-fixed-top navbar-inverse navcolor">
+    <nav class="main navbar-default navbar-inverse navcolor">
       <div class="container">
-        <div class="navbar-header">
+        <!-- <div class="navbar-header">
            
           <a class="navbar-brand logocolor" href="#" style="color: white;">Dance Cuban Style</a>
-        </div>
+        </div> -->
         <div id="navbar" class="navbar-collapse collapse">
       
          <ul class="nav navbar-nav navbar-right mynav" id="myClick">
@@ -125,13 +125,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text">
-                        <span class="hello">Learn to dance like the Cubans</span>
+                        <span class="hello">Cuban music &amp; dance</span>
                     </div>    
                     <div class="intro-text">
                         <span class="greeting"></span>
                     </div>
                     <div id="dancebtn" class="page-scroll">
-                        <a href="#danceStyles" class="btn btn-lg btn-outline">Start here
+                        <a href="#danceStyles" class="btn btn-lg btn-outline">Explore
                         </a>
                     </div>
                 </div>
@@ -154,19 +154,21 @@
             <div class="row centered">
 
             <h1><strong>Popular Cuban social dance styles</strong></h1>
-            <p class="lead">Casino (Cuban style salsa), Son and Rumba are the most popular social dance styles. Dancers usually combine moves from Rumba and Son into their salsa routines.</p>
+            <p class="lead">Casino (Cuban style salsa), Son and Rumba are the most popular social dance styles.<br> Click below to listen to the different music types for each dance style.</p>
 
 
 
             <div class="col-sm-6 col-md-4 pull-left">
-                <div class="thumbnail hovereffect">
+                <div class="hovereffect">
                   <img src="images/timba-thumb.jpg" class="img-responsive" />
                   
                   <div class="overlay"> 
                     <h2>Salsa and rueda de casino</h2>
-                    <p class="blurb">Pairs of dancers form a circle, with dance moves called out by one person, a caller.  “Calls” in a Rueda include turns patterns, footwork sequences, and various games.</p>
-                    <p><a href="#" class="btn btn-primary mybtn" role="button" id="timbaBtn">Play tracks</a></p>
+                     <p><a href="#" class="btn btn-primary mybtn" role="button" id="timbaBtn">Play tracks</a></p>
+                    
                   </div>
+                  <p class="blurb">Pairs of dancers form a circle, with dance moves called out by one person, a caller.  “Calls” in a Rueda include turns patterns, footwork sequences, and various games.</p>
+                   
 
                 </div>
             </div>
@@ -178,10 +180,10 @@
                   <img src="images/son-thumb.jpg" class="img-responsive" />
                   <div class="overlay"> 
                     <h2>Son cubano</h2>
-                    <p class="blurb">Son is danced on the two count (contratiempo). It combines the structure and feel of the Spanish canción with Afro-Cuban traits and percussion.</p>
                     <p><a href="#" class="btn btn-primary mybtn" role="button" id="sonBtn">Play tracks</a></p>
                     
                   </div>
+                  <p class="blurb">Son is danced on the two count (contratiempo). It combines the structure and feel of the Spanish canción with Afro-Cuban traits and percussion.</p><br />
                     
                   </div>
                 </div>
@@ -191,10 +193,14 @@
                   <img src="images/rumba-thumb.jpg" class="img-responsive" />
                   <div class="overlay"> 
                     <h2>Rumba</h2>
-                    <p class="blurb">Vocal improvisation, elaborate dancing and polyrhythmic drumming are the key components of all rumba styles (yambú, guaguancó and columbia).</p>
-                   
-                     <p><a href="#" class="btn btn-primary mybtn" role="button" id="rumbaBtn">Play tracks</a></p>
+
+
+                    <p><a href="#" class="btn btn-primary mybtn" role="button" id="rumbaBtn">Play tracks</a></p>
+                    
+                     
                   </div>
+                  <p class="blurb">Vocal improvisation, elaborate dancing and polyrhythmic drumming are the key components of all rumba styles (yambú, guaguancó and columbia).</p>
+                   
                     
                   </div>
                 </div>
@@ -218,7 +224,7 @@
 
                     <div class="centered">
                     <h1><strong>Rueda de Casino Call Generator</strong></h1>
-                    <p><a href="#" class="btn btn-primary mybtn" role="button" id="randomize"><strong>NEXT RUEDA MOVE</strong></a></p>
+                    <p><a href="#" class="btn btn-primary mybtn" role="button" id="randomize"><strong>Next rueda move</strong></a></p>
                     
 
             <!--           <img class="ruedagen-img" src="images/timba-rueda1.jpg" />
