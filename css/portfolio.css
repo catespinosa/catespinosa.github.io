@@ -1,0 +1,23 @@
+/*playing around with viewport units*/
+
+body {
+  background: #ffffff;
+}
+
+header {
+  height: 100vh;
+  background: ;
+  padding: 3em 6em; }
+  
+  header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 5vw;
+    text-align: end;
+    font-family: 'Playfair Display SC', serif; }
+
+header h2 {
+    margin-top: 0;
+    font-size: 2vw;
+    text-align: end;
+    font-family: 'Playfair Display SC', serif; }
