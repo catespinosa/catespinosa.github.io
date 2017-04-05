@@ -6,12 +6,17 @@ body {
 
 header {
   height: 100vh;
-  background: ;
   padding: 3em 6em; }
+
+img {
+	border-radius: 100%;
+ 	-webkit-border-radius: 100%;
+ 	-moz-border-radius: 100%;
+}
   
   header h1 {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0;
     font-size: 5vw;
     text-align: end;
     font-family: 'Playfair Display SC', serif; }
