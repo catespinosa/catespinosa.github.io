@@ -1,28 +1,84 @@
-/*playing around with viewport units*/
-
 body {
   background: #ffffff;
+  font-family: sans-serif;
 }
 
-header {
-  height: 100vh;
-  padding: 3em 6em; }
+/*NAVIGATION*/
+/* The navigation bar */
+nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
 
-img {
-	border-radius: 100%;
- 	-webkit-border-radius: 100%;
- 	-moz-border-radius: 100%;
+
+nav ul {
+	list-style-type: none;
+}
+
+nav li {
+	display: block;
+	float: left;
+}
+
+/* Links inside the navbar */
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*End Navigation styles*/
+
+header {
+  height: 60vh;
+  padding: 5em 6em;
+  text-align: center;
+  background:#ece4e1;
+  }
+
+header img {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin: 0 auto;
+	shape-outside: circle();
+	/* float: left; */
+	width: 20%;
 }
   
   header h1 {
-    margin-top: 0;
-    margin-top: 0;
+    margin: 0;
     font-size: 5vw;
-    text-align: end;
-    font-family: 'Playfair Display SC', serif; }
+    /* text-align: end; */
+    font-family: 'Playfair Display SC', serif;
+    color: #5d453d;
+    /* font-weight: normal; */
+    }
 
 header h2 {
     margin-top: 0;
     font-size: 2vw;
-    text-align: end;
-    font-family: 'Playfair Display SC', serif; }
+    /* text-align: end; */
+    font-family: 'Playfair Display SC', serif;
+    color: #8d726a;
+    }
+
+header h2 {
+    margin-top: 0;
+    font-size: 2vw;
+    /* text-align: end; */
+    font-family: 'Playfair Display SC', serif;
+    color: #8d726a;
+    }
+
+
+ header p {
+    margin: 0 auto;
+    width: 50vw;
+     
+    }
