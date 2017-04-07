@@ -1,6 +1,6 @@
 body {
   background: #ffffff;
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /*NAVIGATION*/
@@ -35,7 +35,7 @@ nav a {
 /*End Navigation styles*/
 
 header {
-  height: 60vh;
+  height: 100vh;
   padding: 5em 6em;
   text-align: center;
   background:#ece4e1;
@@ -55,17 +55,8 @@ header img {
     margin: 0;
     font-size: 5vw;
     /* text-align: end; */
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     color: #5d453d;
-    /* font-weight: normal; */
-    }
-
-header h2 {
-    margin-top: 0;
-    font-size: 2vw;
-    /* text-align: end; */
-    font-family: 'Playfair Display SC', serif;
-    color: #8d726a;
     }
 
 header h2 {
@@ -83,13 +74,26 @@ header h2 {
      
     }
 
+/* PORTFOLIO SECTION */
 
 #portfolio {
 	display:grid;
-	grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     grid-gap: 1rem;
-    padding-right: 1rem;
-    padding-left:1rem;
+    margin-right: 1rem;
+    margin-left:1rem;
+}
+#portfolio h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+
+}
+#portfolio p {
+	font-family: 'Raleway', sans-serif;
+
+}
+#portfolio :nth-child(3) {
+  grid-row: 2 / 2;
+  grid-column: 3 / 5 ;
 }
 
 
