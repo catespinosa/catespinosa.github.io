@@ -84,6 +84,13 @@ header h2 {
     }
 
 
+#portfolio {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+
 
 /* THUMBNAIL HOVER */
 
