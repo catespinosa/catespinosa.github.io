@@ -91,9 +91,8 @@ header h2 {
 	font-family: 'Raleway', sans-serif;
 
 }
-#portfolio :nth-child(3) {
-  grid-row: 2 / 2;
-  grid-column: 3 / 5 ;
+#portfolio :nth-child(1), #portfolio :nth-child(5) {
+  grid-column: span 2 ;
 }
 
 
@@ -102,15 +101,15 @@ header h2 {
 
 
 .hovereffect {
-  width: 300px;
-  height: 100%;
+/*  width: 300px;
+*/  height: 100%;
   float: left;
   overflow: hidden;
   position: relative;
   text-align: center;
   cursor: default;
-  background: #42b078;
-}
+/*  background: #42b078;
+*/}
 
 .hovereffect .overlay {
   width: 100%;
