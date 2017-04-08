@@ -93,8 +93,8 @@ header h2 {
 
 }
 #portfolio :nth-child(2), #portfolio :nth-child(5) {
-  grid-column: span 2 ;
-}
+/*  grid-column: span 2 ;
+*/}
 }
 
 
