@@ -11,6 +11,7 @@ nav {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    z-index: 10;
 }
 
 
@@ -35,10 +36,9 @@ nav a {
 /*End Navigation styles*/
 
 header {
-  height: 100vh;
-    padding: 5em 20vw;
+/*  height: 100vh;
+*/    padding: 5em 20vw;
     text-align: center;
-    background: #ece4e1;
 }
 
 header img {
@@ -79,7 +79,7 @@ header h2 {
 
 #portfolio {
 	display:grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     grid-gap: 1rem;
     margin-right: 1rem;
     margin-left:1rem;
@@ -92,9 +92,8 @@ header h2 {
 	font-family: 'Raleway', sans-serif;
 
 }
-#portfolio :nth-child(2), #portfolio :nth-child(4) {
+#portfolio :nth-child(2), #portfolio :nth-child(5) {
   grid-column: span 2 ;
-  grid-row: span 4;
 }
 }
 
@@ -112,8 +111,8 @@ header h2 {
   position: relative;
   text-align: center;
   cursor: default;
-/*  background: #42b078;
-*/}
+  background: #ece4e1;
+}
 
 .hovereffect .overlay {
   width: 100%;
