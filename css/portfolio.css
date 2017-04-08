@@ -36,10 +36,10 @@ nav a {
 
 header {
   height: 100vh;
-  padding: 5em 6em;
-  text-align: center;
-  background:#ece4e1;
-  }
+    padding: 5em 20vw;
+    text-align: center;
+    background: #ece4e1;
+}
 
 header img {
 	border-radius: 50%;
@@ -70,15 +70,16 @@ header h2 {
 
  header p {
     margin: 0 auto;
-    width: 50vw;
      
     }
 
 /* PORTFOLIO SECTION */
 
+@supports (display:grid) {
+
 #portfolio {
 	display:grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+	grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
     grid-gap: 1rem;
     margin-right: 1rem;
     margin-left:1rem;
@@ -91,14 +92,17 @@ header h2 {
 	font-family: 'Raleway', sans-serif;
 
 }
-#portfolio :nth-child(1), #portfolio :nth-child(5) {
+#portfolio :nth-child(2), #portfolio :nth-child(4) {
   grid-column: span 2 ;
+  grid-row: span 4;
+}
 }
 
 
-
 /* THUMBNAIL HOVER */
-
+.cards {
+	float: left;
+}
 
 .hovereffect {
 /*  width: 300px;
