@@ -92,9 +92,9 @@ header h2 {
 	font-family: 'Raleway', sans-serif;
 
 }
-#portfolio :nth-child(2), #portfolio :nth-child(5) {
-/*  grid-column: span 2 ;
-*/}
+#portfolio :nth-child(3), #portfolio :nth-child(1) {
+  grid-row: span 2 ;
+}
 }
 
 
