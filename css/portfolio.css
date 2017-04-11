@@ -79,7 +79,7 @@ header h2 {
 
 #portfolio {
 	display:grid;
-	grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     grid-gap: 1.5rem;
     margin-right: 3rem;
     margin-left:3rem;
@@ -92,8 +92,8 @@ header h2 {
 	font-family: 'Raleway', sans-serif;
 
 }
-#portfolio :nth-child(3), #portfolio :nth-child(1) {
-  grid-row: span 2 ;
+#portfolio :nth-child(1) {
+  grid-column: span 2 ;
   /*grid-column: span 2;*/
 }
 }
