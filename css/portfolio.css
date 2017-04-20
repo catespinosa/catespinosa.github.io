@@ -77,26 +77,61 @@ header h2 {
 
 @supports (display:grid) {
 
-#portfolio {
-	display:grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    grid-gap: 1.5rem;
-    margin-right: 3rem;
-    margin-left:3rem;
-}
-#portfolio h2 {
-	font-family: 'Open Sans Condensed', sans-serif;
+	#portfolio {
+		display:grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+	    grid-gap: 1.5rem;
+	    margin-right: 3rem;
+	    margin-left:3rem;
+	}
+	#portfolio h2 {
+		font-family: 'Open Sans Condensed', sans-serif;
 
-}
-#portfolio p {
-	font-family: 'Raleway', sans-serif;
+	}
+	#portfolio p {
+		font-family: 'Raleway', sans-serif;
 
+	}
+	/*#portfolio :nth-child(1) {
+	  grid-column: span 2 ;
+	  /*grid-column: span 2;*/
+
+
+
+	.mygrid article {
+	display: grid;
+    grid-template-columns: 275px 1fr 2fr;
+    grid-template-rows: minmax(100px, 5fr) -webkit-min-content 2fr;
+    grid-template-rows: minmax(100px, 5fr) min-content 2fr;
+    max-width: 60rem;
+	}
+
+  .mygrid h2 { /* autoprefixer: off */
+  font-family:'Sanchez Slab W03', Courier, serif;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  margin: 0;
+  grid-column: 2 / 4;
+  grid-row: 2;
+  span {
+    display: inline;
+    padding: 0.5rem 0.25rem 0;
+    box-decoration-break: clone;
+    background: #FFED00;  
+  }
 }
-#portfolio :nth-child(1) {
-  grid-column: span 2 ;
-  /*grid-column: span 2;*/
+	.mygrid img {
+	grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    object-fit: cover;
+    box-shadow: 1rem 1rem cyan;
+	}	
+
+  
 }
-}
+
+
 
 
 /* THUMBNAIL HOVER */
@@ -105,14 +140,14 @@ header h2 {
 }
 
 .hovereffect {
-/*  width: 300px;
-*/  height: 100%;
+  width: 300px;
+  height: 100%;
   float: left;
   overflow: hidden;
   position: relative;
   text-align: center;
   cursor: default;
-  background: #cccccc;
+  background: #e4d8d4;
 }
 
 .hovereffect .overlay {
