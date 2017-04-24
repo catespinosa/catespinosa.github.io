@@ -15,10 +15,11 @@ main {
 }
 article { /* autoprefixer: off */
   display: grid;
-  grid-template-columns: 275px 1fr 2fr;
-  grid-template-rows: minmax(100px, 5fr) -webkit-min-content 2fr; // Safari needs prefix for min-content still, fix on it's way — trac.webkit.org/changeset/213831/webkit
-  grid-template-rows: minmax(100px, 5fr) min-content 2fr;
-  max-width: 60rem;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-template-rows: minmax(100px, 5fr) -webkit-min-content 2fr; /*Safari needs prefix for min-content still, fix on it's way — trac.webkit.org/changeset/213831/webkit*/
+/*  grid-template-rows: minmax(100px, 5fr) min-content 2fr;
+*/  max-width: 60rem;
+  margin-bottom: 4rem;
 }
 img { /* autoprefixer: off */
   grid-column: 1 / 3;
@@ -27,17 +28,18 @@ img { /* autoprefixer: off */
   box-shadow: 1rem 1rem cyan;
 }
 h2 { /* autoprefixer: off */
-  font-family:'Sanchez Slab W03', Courier, serif;
+  font-family: Courier, serif;
   font-weight: normal;
   font-size: 2.4rem;
   line-height: 1.4;
   margin: 0;
   grid-column: 2 / 4;
   grid-row: 2;
-  span {
+
+}
+span {
     display: inline;
     padding: 0.5rem 0.25rem 0;
     box-decoration-break: clone;
     background: #FFED00;  
   }
-}
