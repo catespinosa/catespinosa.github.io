@@ -29,7 +29,7 @@ $.get("https://accesscontrolalloworiginall.herokuapp.com/http://mashable.com/sto
  	// make all article title links NOT go to the source but instead open the pop up
  	$('section.articleContent a').on('click', function(event){
  		event.preventDefault();
- 		var h3_text = $(this).children('h3')[0];
+ 		//var h3_text = $(this).children('h3')[0];
  		
  		showPopUp();
 
