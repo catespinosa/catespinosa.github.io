@@ -8,18 +8,6 @@ $.get("https://accesscontrolalloworiginall.herokuapp.com/http://mashable.com/sto
  	console.log(articles);
  	addArticlesToPage(articles);
 
- 	// make all article title links NOT go to the source but instead open the pop up
- 	$('section.articleContent a').on('click', function(event){
- 		event.preventDefault();
- 		var h3_text = $(this).children('h3')[0];
- 		var title = h3_text;
- 		var link = response.new[0].link;
- 		var description = response.new.content;
- 		showPopUp(title, link, description);
-
- 	});
-
-
 	function parseResults(results){
 		var all_articles = []; //this is a placeholder for what we want to return
 		results.forEach(function(row){
@@ -30,13 +18,41 @@ $.get("https://accesscontrolalloworiginall.herokuapp.com/http://mashable.com/sto
 				channel : row.channel,
 				total_shares : row.shares.total,
 				content : row.content.plain,
-				description : row.content.plain
 			};//var article
 			all_articles.push(article); //we want to push the object in to the all articles array
 		});//foreach
 
 		return all_articles;
 	};// parseresults function
+
+
+ 	// make all article title links NOT go to the source but instead open the pop up
+ 	$('section.articleContent a').on('click', function(event){
+ 		event.preventDefault();
+ 		var h3_text = $(this).children('h3')[0];
+ 		
+ 		showPopUp();
+
+ 	});
+
+
+
+ 	function showPopUp(title, link, content) {
+	 	// make pop up div visible by removing the "loader" and "hidden" classes
+	 		$('#popUp').removeClass('loader hidden');
+	 	// replace the html dom text in the pop up div with that of the article
+	 		$('#popUp h1').html(title);
+	 		$('#popUp p').html(content);
+	 		$('#popUp .container a').append(link);
+	 		// add an onclick event to be able to close the pop up
+	 		$('.closePopUp').on('click', function (e) {
+	 			e.preventDefault();
+	 			$('#popUp').addClass('loader hidden');
+	 		})
+ 
+ 
+ 	// make sure the read more from source link opens a new tab/window
+	 };
 
 
  	function addArticlesToPage(articles) {
@@ -53,22 +69,6 @@ $.get("https://accesscontrolalloworiginall.herokuapp.com/http://mashable.com/sto
  	
  	
 
-	 function showPopUp(title, link, description) {
-	 	// make pop up div visible by removing the "loader" and "hidden" classes
-	 		$('#popUp').removeClass('loader hidden');
-	 	// replace the html dom text in the pop up div with that of the article
-	 		$('#popUp h1').html(title);
-	 		$('#popUp p').html(description);
-	 		$('#popUp .container a').attr('href', link, );
-	 		// add an onclick event to be able to close the pop up
-	 		$('.closePopUp').on('click', function (e) {
-	 			e.preventDefault();
-	 			$('#popUp').hide();
-	 		})
- 
- 
- 	// make sure the read more from source link opens a new tab/window
-	 };
 
 
 }); //$get
