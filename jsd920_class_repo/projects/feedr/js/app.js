@@ -37,37 +37,38 @@ $.get("https://accesscontrolalloworiginall.herokuapp.com/http://mashable.com/sto
  	$('section.articleContent a').on('click', function(event){
  		event.preventDefault();
  		var h3_text = $(this).children('h3')[0];
- 		console.log('this is h3', h3_text)
- 		// var title = results.title;
- 		// console.log('this is title', title)
- 		// var link = event.link;
- 		// console.log('this is link', link)
- 		// var content = event.title;
+ 		// console.log('this is h3', h3_text)
+ 		var title = response.new.title;
+ 		console.log('this is title', title);
+ 		var link = response.new.link;
+ 		console.log('this is link', link);
+ 		var content = response.new.content;
  		
- 		// showPopUp(title, link, content);
- 		// console.log('pop up clicked', showPopUp)
+ 		showPopUp(title, link, content);
+ 	});
+
 
  		function showPopUp(title, link, content) {
 	 	// make pop up div visible by removing the "loader" and "hidden" classes
 	 		$('#popUp').removeClass('loader hidden');
-	 	// replace the html dom text in the pop up div with that of the article
-	 		$('#popUp h1').html(title);
-	 		$('#popUp p').html(content);
-	 		$('#popUp .container a').append(link);
-	 		console.log('this is link', link)
-	 		// add an onclick event to be able to close the pop up
-	 		$('.closePopUp').on('click', function (e) {
+
+ 			$('.closePopUp').on('click', function (e) {
 	 			e.preventDefault();
 	 			$('#popUp').addClass('loader hidden');
 	 		})
-
-	 	showPopUp(title, link, content);
+	 	// replace the html dom text in the pop up div with that of the article
+ 			function addtexttopopup (response) {
+ 			var popUptext = response.articles;
+  			var popup = parseResults(popUptext);
+  			addArticlesToPage(popup);
+	 		// add an onclick event to be able to close the pop up
+	 		};
  
  
  	// make sure the read more from source link opens a new tab/window
 	 };
 
- 	});
+ 	
 
 
 
